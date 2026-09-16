@@ -1,0 +1,23 @@
+{
+ "ref": "023001223003A",
+ "refDisplay": "0230 01 223003A",
+ "title": "CARTER HUILE FILTRE SONDE",
+ "nature": "",
+ "applicability": " JUSQU’A MOTEUR 4717577",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0008"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0008"
+  }
+ ]
+}

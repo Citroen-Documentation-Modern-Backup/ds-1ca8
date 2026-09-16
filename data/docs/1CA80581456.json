@@ -1,0 +1,29 @@
+{
+ "ref": "1CA80581456",
+ "refDisplay": "1CA8 0 58 1456",
+ "title": "MANCHON C/C ECHANGEUR AIR-AIR-TUBE",
+ "nature": "",
+ "applicability": "(8003) C3 BERLINE 5PTES DIESEL TURBO DV4TED4 BVM5",
+ "typDoc": "6",
+ "css": [
+  "css/Document/baremes.css",
+  "css/Document/common.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7Q",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F3N",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7Q",
+   "fctId": "FCT0014"
+  }
+ ]
+}

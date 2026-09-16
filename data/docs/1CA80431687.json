@@ -1,0 +1,69 @@
+{
+ "ref": "1CA80431687",
+ "refDisplay": "1CA8 0 43 1687",
+ "title": "SONDE DE PRESSION TURBO",
+ "nature": "",
+ "applicability": "(8006) C3 BERLINE 5PTES INJECTION TU1JP BVM5",
+ "typDoc": "6",
+ "css": [
+  "css/Document/baremes.css",
+  "css/Document/common.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6P",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7P",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7Q",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F1Z",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F3N",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6P",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7Q",
+   "fctId": "FCT0014"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0014"
+  }
+ ]
+}

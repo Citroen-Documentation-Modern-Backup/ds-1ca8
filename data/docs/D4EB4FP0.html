@@ -1,0 +1,300 @@
+<div id="title" class="section_titre"><table class="refDoc"><tbody><tr><td colspan="2" class="references">D4EB4FP0</td><td class="title">Principe de fonctionnement : Alimentation électrique</td></tr></tbody></table></div><div id="appl" class="section_appl"> DEPUIS OPR 9527</div><div class="section_corps" id="content"><div class="cha1"><a name="LABEL1"></a><div class="sti1">1. Généralités</div></div>
+<div class="tli">L’état électrique du véhicule est déterminé par 4 variables : 
+<ul>
+<li>État principal ou position de la clé de contact&nbsp;(arrêt, +ACC, +APC, +DEM, etc.)</li>
+<li>Mode de consommation&nbsp;("nominal" ou "économie")</li>
+<li>Niveau de délestage&nbsp;(interdiction temporaire de fonctionnement de certains gros consommateurs d’énergie électrique)</li>
+<li>Configuration du véhicule&nbsp;(client, usine, parc, "show-room")</li>
+</ul>
+</div>
+<div class="cha1"><a name="LABEL2"></a><div class="sti1">2. État principal ou position de la clé de contact</div></div>
+<div class="par">Représentation du contacteur antivol.</div><div id="d4cp00fc_1_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/fc/d4cp/d4cp00fc.avif" class="image" height="300" width="300" id="d4cp00fc_1"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d4cp00fc</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/fc/d4cp/d4cp00fc.avif" data-figure="1"><img id="d4cp00fc_1_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Position clé de contact</td>
+<td colspan="1" rowspan="1">Alimentation </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">1</td>
+<td colspan="1" rowspan="1">Position arrêt</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">2</td>
+<td colspan="1" rowspan="1">+ACC</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">3</td>
+<td colspan="1" rowspan="1">+APC alternateur non opérationnel&nbsp;(moteur non tournant). +APC alternateur opérationnel&nbsp;(moteur tournant)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">4</td>
+<td colspan="1" rowspan="1">Phase de démarrage du moteur thermique</td>
+</tr></tbody></table>
+</div>
+<div class="cha1"><a name="LABEL3"></a><div class="sti1">3. Mode de consommation : "nominal" ou "économie"</div></div>
+<div class="cha2"><a name="LABEL8"></a><div class="sti2">3.1. Mode nominal </div></div>
+<div class="par">En mode nominal toutes les fonctionnalités électriques sont autorisées.</div><div class="par">Après la disparition de l’information alternateur opérationnel (moteur tournant) le mode nominal est actif pendant une temporisation de 30 minutes.</div><div class="par">Cette temporisation de 30 minutes peut être utilisée de 2 manières en fonction de la position de la clé de contact.</div><div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="2">Conditions de passage au mode économie</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Position clé de contact</td>
+<td colspan="1" rowspan="1">Description</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Arrêt ou clé de contact retirée</td>
+<td colspan="1" rowspan="1">La temporisation de 30 minutes est décomptée uniquement lorsque le temps d’utilisation des fonctions dites de réveil ou de maintien sont actives&nbsp;(*)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">+ACC ou +APC</td>
+<td colspan="1" rowspan="1">La temporisation de 30 minutes est décomptée indépendamment des fonctions de réveil ou non permanente actives ou inactives</td>
+</tr></tbody></table>
+</div>
+<div class="par">(*)&nbsp;Voir le chapitre veille/réveil des réseaux.</div><div class="cha2"><a name="LABEL9"></a><div class="sti2">3.2. Mode économie</div></div>
+<div class="par">Le mode de consommation "économie" est uniquement disponible dans l’état alternateur non opérationnel&nbsp;(moteur non tournant).</div><div class="par">Le mode économie évite la décharge de la batterie lorsque le moteur est non tournant.</div><div class="par">Les fonctions électriques non permanentes sont désactivées quelle que soit la position de la clé de contact.</div><div class="par">Seules quelques fonctions permanentes et une partie des fonctions permanentes à demande verrouillée sont autorisées dans le mode économie.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Une fonction permanente assure un service même en l’absence d’un utilisateur. </div></div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : Une fonction permanente à demande verrouillée assure un service tant que la commande est maintenue. </div></div>
+<div class="tli">Fonctions permanentes autorisées dans le mode économie : 
+<ul>
+<li>Feux de détresse</li>
+<li>Alarme </li>
+<li>Verrouillage centralisé</li>
+</ul>
+</div>
+<div class="tli">Fonctions permanentes à demande verrouillée autorisées dans le mode économie : 
+<ul>
+<li>Avertisseur sonore</li>
+<li>Feux indicateurs de direction </li>
+<li>Appel de phares</li>
+</ul>
+</div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Configuration du véhicule</td>
+<td colspan="1" rowspan="1">Condition de passage du mode économie au mode nominal</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Mode client</td>
+<td colspan="1" rowspan="1">Uniquement lors de l’apparition de l’information alternateur opérationnel ou moteur tournant</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Mode usine</td>
+<td colspan="1" rowspan="1">Le mode nominal peut être activé par l’outil de diagnostic pour une durée déterminée ou jusqu’à l’interruption de l’opérateur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">À l’apparition de l’information moteur tournant au BSI. Le retour au mode économie se fait dès la disparition de l’information moteur tournant</td>
+</tr></tbody></table>
+</div>
+<div class="cha1"><a name="LABEL4"></a><div class="sti1">4. Veille/réveil des réseaux VAN et du boîtier de servitude intelligent</div></div>
+<div class="cha2"><a name="LABEL10"></a><div class="sti2">4.1. Condition de maintien des réseaux VAN</div></div>
+<div class="par">Avant la mise en veille des réseaux, puis du boîtier de servitude intelligent, il existe des conditions de maintien.</div><div class="tli">Les réseaux VAN (CARROSSERIE 1 et 2 et CONFORT) doivent être maintenus dans les conditions suivantes : 
+<ul>
+<li>Clé en position +ACC</li>
+<li>Clé en position +APC</li>
+<li>Passage de la clé de contact de la position arrêt à la position accessoires effectué depuis moins d’une minute</li>
+<li>Passage de la clé de contact de la position +ACC à la position +APC moteur non tournant effectué depuis moins d’une minute</li>
+<li>Passage de la clé de contact de la position +APC moteur tournant à la position +ACC effectué depuis moins d’une minute</li>
+<li>Écran multifonction actif</li>
+<li>Radiotéléphone RT3 actif</li>
+<li>Feux de position allumés ou appel de phares actif</li>
+<li>Feux de détresse actifs</li>
+<li>Plafonnier allumé</li>
+<li>Eclaireur de coffre allumé</li>
+<li>Ouverture du volet arrière en cours&nbsp;(uniquement véhicules C2 et C3 Pluriel)</li>
+<li>Ouverture du hayon&nbsp;(uniquement véhicule C3)</li>
+<li>Ouverture de lunette arrière en cours&nbsp;(uniquement véhicules C2 et C3 Pluriel)</li>
+<li>Déverrouillage de la cassette de toit escamotable en cours&nbsp;(uniquement véhicule C3 Pluriel)</li>
+<li>Autorisation de fonctionnement du toit escamotable par le BSI&nbsp;(uniquement véhicule C3 Pluriel)</li>
+<li>Avertisseur sonore actif</li>
+<li>Session de diagnostic ouverte</li>
+<li>Alerte oubli de clé et alerte oubli des feux, via le bruiteur intégré au module de commutation sous volant de direction</li>
+</ul>
+</div>
+<div class="cha2"><a name="LABEL11"></a><div class="sti2">4.2. Mise en veille des réseaux VAN et du boîtier de servitude intelligent</div></div>
+<div class="par">Afin de diminuer la consommation électrique des calculateurs lorsque le moteur ne tourne pas, une stratégie de mise en veille et de réveil est appliquée sur l’alimentation des calculateurs et des réseaux du véhicule.</div><div class="par">La stratégie de mise en veille consiste à endormir en premier les réseaux VAN et ensuite d’endormir le boîtier de servitude intelligent.</div><div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Étapes </td>
+<td colspan="1" rowspan="1">Description fonctionnelle</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A</td>
+<td colspan="1" rowspan="1">Les réseaux et le BSI sont éveillés</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B</td>
+<td colspan="1" rowspan="1">L’ensemble des conditions de maintien des réseaux et de réveil est scruté et aucune n’est détectée</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">C</td>
+<td colspan="1" rowspan="1">Le BSI décompte alors une temporisation de 60 secondes en mode client ou 2 secondes en mode usine</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Cette temporisation est décomptée tant qu’aucune condition de maintien des réseaux n’est présente</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Cette temporisation est réinitialisée dès qu’une condition de maintien ou de réveil des réseaux apparaît</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">D</td>
+<td colspan="1" rowspan="1">Si rien n’est détecté jusqu’à la fin de cette temporisation, le BSI averti par une trame les calculateurs que les réseaux VAN vont être mis en veille dans 5 secondes</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Sur réception de cette trame, tous les calculateurs peuvent enregistrer leurs données en mémoire</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">E</td>
+<td colspan="1" rowspan="1">Après la temporisation de 5 secondes, si aucune condition de maintien ou de réveil des réseaux n’est détectée le BSI coupe l’alimentation +VAN</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Les réseaux passent dans l’état endormi</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">F</td>
+<td colspan="1" rowspan="1">Le BSI applique de nouveau une temporisation de 60 secondes en mode nominal ou de 15 secondes en mode usine avant de passer en mode veille</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Cette temporisation est décomptée tant qu’aucune condition de maintien du BSI n’est présente</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Cette temporisation est réinitialisée dès qu’une condition de maintien ou de réveil du BSI est apparue</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G</td>
+<td colspan="1" rowspan="1">À la fin de la temporisation, le BSI et les réseaux sont endormis</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL12"></a><div class="sti2">4.3. Réveil des réseaux VAN et/ou du boîtier de servitude intelligent</div></div>
+<div class="par">Lorsque les réseaux VAN (CARROSSERIE 1 et 2 et CONFORT) sont en veille, les réseaux matérialisés par deux fils DATA et DATA B (barre) sont non opérationnels.</div><div class="par">Chaque calculateur surveille les événements extérieurs devant provoquer le retour à la pleine fonctionnalité des réseaux.</div><div class="par">Lorsqu’un événement de réveil est détecté, le calculateur concerné consomme un courant sur DATA B (barre).</div><div class="par">Cette consommation de courant est détectée par le boîtier de servitude intelligent.</div><div class="par">Le BSI commande un relais qui commute une alimentation en +VAN à l’ensemble des calculateurs des réseaux VAN (CARROSSERIE et CONFORT).</div><div class="par">Une fois les réseaux réveillés, les calculateurs sont alimentés en +VAN et les voies DATA et DATA B (barre) redeviennent le support de communication entre les calculateurs.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Toute demande de réveil du réseau VAN CARROSSERIE 1 ou 2 ou VAN CONFORT entraîne le réveil du réseau VAN CARROSSERIE 1 et 2 et VAN CONFORT. </div></div>
+<div class="cha2"><a name="LABEL13"></a><div class="sti2">4.4. Synoptique général</div></div>
+<div class="par">Ce synoptique représente l’ensemble des calculateurs provoquant le réveil des réseaux VAN et également les entrées dites de "réveil" du boîtier de servitude intelligent&nbsp;(A).</div><div id="d4ep0fcd_2_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/cd/d4ep/d4ep0fcd.avif" class="image" height="360" width="615" id="d4ep0fcd_2"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d4ep0fcd</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/cd/d4ep/d4ep0fcd.avif" data-figure="1"><img id="d4ep0fcd_2_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="tli">Légende : 
+<ul>
+<li>Flèche simple : Liaison filaire</li>
+<li>Flèche triple : Liaison multiplexée</li>
+</ul>
+</div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="2">Organes</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">BSI </td>
+<td colspan="1" rowspan="1">Boîtier de servitude intelligent </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">CV00</td>
+<td colspan="1" rowspan="1">Module de commutation sous volant de direction</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">0004</td>
+<td colspan="1" rowspan="1">Combiné </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">6893</td>
+<td colspan="1" rowspan="1">Calculateur de toit escamotable &nbsp;(uniquement véhicule C3 Pluriel)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">8410</td>
+<td colspan="1" rowspan="1">Autoradio </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">8480</td>
+<td colspan="1" rowspan="1">Boîtier télématique RT3</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">8600</td>
+<td colspan="1" rowspan="1">Calculateur d’alarme antieffraction</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A</td>
+<td colspan="1" rowspan="1">Déverrouillage/verrouillage de la porte avant droit. Déverrouillage/verrouillage de la porte avant gauche. Ouverture/fermeture de la porte avant droit. Ouverture/fermeture de la porte avant gauche. Ouverture/fermeture de la porte arrière droit. Ouverture/fermeture de la porte arrière gauche. Ouverture/fermeture du hayon&nbsp;(uniquement véhicule C3). Ouverture/fermeture du volet arrière&nbsp;(uniquement véhicules C2 et C3 Pluriel). Ouverture/fermeture de la lunette arrière&nbsp;(uniquement véhicules C2 et C3 Pluriel). Contacteur allumage du plafonnier</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B</td>
+<td colspan="1" rowspan="1">Demande de localisation verrouillage/déverrouillage/superverrouillage via l’émetteur haute fréquence de la clé de contact</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C</td>
+<td colspan="1" rowspan="1">Commutateur des feux de détresse. Commutateur de verrouillage/déverrouillage des ouvrants&nbsp;(fermeture centralisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D (*)</td>
+<td colspan="1" rowspan="1">Contacteur d’ouverture de la lunette arrière&nbsp;(commande d’ouverture de la lunette arrière). Contacteurs de serrure de lunette arrière&nbsp;(information lunette arrière ouverte ou fermée). Contacteur d’ouverture de cassette de toit escamotable</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">E</td>
+<td colspan="1" rowspan="1">Contact de capot ouvert. Capteur volumétrique</td>
+</tr></tbody></table>
+</div>
+<div class="par">(*)&nbsp;Uniquement véhicule C3 Pluriel.</div><div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Liaisons</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">N° de liaison</td>
+<td colspan="1" rowspan="1">Signal </td>
+<td colspan="1" rowspan="1">Nature du signal</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">5</td>
+<td colspan="1" rowspan="1">Déverrouillage/verrouillage de la porte avant droit. Déverrouillage/verrouillage de la porte avant gauche. Ouverture/fermeture de la porte avant droit. Ouverture/fermeture de la porte avant gauche. Ouverture/fermeture de la porte arrière droit. Ouverture/fermeture de la porte arrière gauche. Ouverture/fermeture du hayon&nbsp;(uniquement véhicule C3). Ouverture/fermeture du volet arrière&nbsp;(uniquement véhicules C2 et C3 Pluriel). Ouverture/fermeture de la lunette arrière&nbsp;(uniquement véhicules C2 et C3 Pluriel). Contacteur allumage du plafonnier</td>
+<td colspan="1" rowspan="1">Tout ou rien</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">6</td>
+<td colspan="1" rowspan="1">Ensemble des conditions de réveil du boîtier de servitude intelligent et/ou des réseaux VAN CARROSSERIE 1 et 2 et VAN CONFORT</td>
+<td colspan="1" rowspan="1">Multiplexée</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">7</td>
+<td colspan="1" rowspan="1">Commutateur d’éclairage&nbsp;(feux de position ou appel de phares). Avertisseur sonore</td>
+<td colspan="1" rowspan="1">VAN CAR1</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Réception d’un signal haute fréquence (HF) via l’émetteur de la clé de contact</td>
+<td colspan="1" rowspan="1">Signal HF</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">8</td>
+<td colspan="1" rowspan="1">Réception d’un signal haute fréquence (HF) via l’émetteur de la clé de contact</td>
+<td colspan="1" rowspan="1">Signal HF</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">9</td>
+<td colspan="1" rowspan="1">Demande d’allumage des feux de détresse. Demande de verrouillage / déverrouillage des ouvrants</td>
+<td colspan="1" rowspan="1">VAN CONFORT/TOUT OU RIEN</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">10</td>
+<td colspan="1" rowspan="1">Demande d’ouverture lunette arrière. Information lunette arrière ouverte ou fermée. Information demande ouverture de cassette de toit ouvrant</td>
+<td colspan="1" rowspan="1">VAN CAR 2/TOUT OU RIEN</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">11</td>
+<td colspan="1" rowspan="1">Bouton ON/OFF de l’autoradio</td>
+<td colspan="1" rowspan="1">VAN Confort</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">12</td>
+<td colspan="1" rowspan="1">Bouton ON/OFF de l’autoradio. Bouton de service actif. Bouton décrocher le téléphone actif. Appel d’urgence actif</td>
+<td colspan="1" rowspan="1">VAN Confort</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">13</td>
+<td colspan="1" rowspan="1">Information capot ouvert. Tentative d’intrusion détectée</td>
+<td colspan="1" rowspan="1">VAN CAR 2/TOUT OU RIEN</td>
+</tr></tbody></table>
+</div>
+<div class="cha1"><a name="LABEL5"></a><div class="sti1">5. Veille/réveil du réseau CAN</div></div>
+<div class="cha2"><a name="LABEL14"></a><div class="sti2">5.1. Mise en veille du réseau CAN</div></div>
+<div class="par">Après coupure du +APC, la communication des calculateurs sur le réseau CAN est opérationnelle pendant 30 secondes minimum&nbsp;(power latch).</div><div class="cha2"><a name="LABEL15"></a><div class="sti2">5.2. Réveil du réseau CAN</div></div>
+<div class="par">À l’apparition du +ACC, la communication des calculateurs sur le réseau CAN est opérationnelle. Le réseau CAN est réveillé.</div><div class="cha1"><a name="LABEL6"></a><div class="sti1">6. Lestage / délestage du réseau électrique</div></div>
+<div class="par">Le lestage et le délestage sont uniquement disponibles dans l’état alternateur opérationnel ou moteur tournant.</div><div class="tli">Pour déterminer le niveau de délestage, le boîtier de servitude intelligent (BSI) sert de : 
+<ul>
+<li>Position de la clé de contact&nbsp;(+ACC, +APC, moteur tournant, etc.)</li>
+<li>Température extérieure </li>
+<li>Tension batterie </li>
+<li>Configuration client/usine</li>
+</ul>
+</div>
+<div class="cha2"><a name="LABEL16"></a><div class="sti2">6.1. Lestage</div></div>
+<div class="par">Le lestage consiste à augmenter la consommation électrique du véhicule pour répondre à des besoins fonctionnels ; Exemple  : Filtre à particules &nbsp;(FAP).</div><div class="par">En augmentant le couple résistant de l’alternateur, le couple du moteur thermique augmente, la température du moteur thermique également.</div><div class="par">Le lestage permet une montée en température du moteur thermique plus rapide afin d’améliorer la régénération du filtre à particules sur les véhicules diesel.</div><div class="par">Le BSI reçoit une demande de lestage du calculateur moteur par le réseau CAN.</div><div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="2">Le BSI force l’activation des consommateurs suivant l’ordre du tableau</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Niveau de délestage</td>
+<td colspan="1" rowspan="1">Fonctions </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">0</td>
+<td colspan="1" rowspan="1">Aucun lestage&nbsp;(fonctionnement normal)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">1</td>
+<td colspan="1" rowspan="1">Enclenchement lunette arrière chauffante</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">2</td>
+<td colspan="1" rowspan="1">Enclenchement groupe motoventilateur en petite vitesse</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">3</td>
+<td colspan="1" rowspan="1">Enclenchement du groupe motoventilateur en moyenne vitesse</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">4</td>
+<td colspan="1" rowspan="1">Activation bougies de préchauffage</td>
+</tr></tbody></table>
+</div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : Lors du lestage, aucune information sur l’activation des consommateurs n’est donnée au conducteur. </div></div>
+<div class="cha2"><a name="LABEL17"></a><div class="sti2">6.2. Délestage</div></div>
+<div class="par">Dans le cas du moteur tournant, un déséquilibre prolongé du bilan électrique provoque un délestage (interdiction temporaire de fonctionnement) de certains gros consommateurs d’énergie électrique en fonctionnement.</div><div class="par">La stratégie de délestage assure un bilan énergétique positif de la batterie quels que soient les consommateurs en fonctionnement.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Ce mode de fonctionnement est considéré comme un mode dégradé. </div></div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : Le BSI commence par délester les fonctions activées pour la régénération du filtre à particules&nbsp;(FAP). </div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Niveau de délestage</td>
+<td colspan="1" rowspan="1">Fonctions </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">1</td>
+<td colspan="1" rowspan="1">Coupure de la lunette arrière chauffante si la durée d’activation est supérieure à 6 minutes</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">2</td>
+<td colspan="1" rowspan="1">-</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">3</td>
+<td colspan="1" rowspan="1">-</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">4</td>
+<td colspan="1" rowspan="1">-</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">5</td>
+<td colspan="1" rowspan="1">Coupure pulseur de climatisation</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">6</td>
+<td colspan="1" rowspan="1">Coupure du compresseur de climatisation</td>
+</tr></tbody></table>
+</div>
+<div id="d1ap026c_3_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/6c/d1ap/d1ap026c.avif" class="image" height="300" width="300" id="d1ap026c_3"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d1ap026c</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/6c/d1ap/d1ap026c.avif" data-figure="1"><img id="d1ap026c_3_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">Une tension de batterie correcte se situe dans la zone C.</div><div class="tli">Légende : 
+<ul>
+<li>X : Axe du temps</li>
+<li>Y : Axe des tensions de batterie</li>
+</ul>
+</div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Repère </td>
+<td colspan="1" rowspan="1">Désignation</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">V1</td>
+<td colspan="1" rowspan="1">Tension d’alerte 12 V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">V2</td>
+<td colspan="1" rowspan="1">Tension seuil bas 12,8 V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">V3</td>
+<td colspan="1" rowspan="1">Tension seuil haut 13 V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F</td>
+<td colspan="1" rowspan="1">Zone de niveau maxi de délestage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G</td>
+<td colspan="1" rowspan="1">Zone d’augmentation de délestage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H</td>
+<td colspan="1" rowspan="1">Zone de délestage adapté</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">J</td>
+<td colspan="1" rowspan="1">Zone de diminution de délestage</td>
+</tr></tbody></table>
+</div>
+<div class="cha1"><a name="LABEL7"></a><div class="sti1">7. Configuration du véhicule : Client, usine, parc et "show-room"</div></div>
+<div class="cha2"><a name="LABEL18"></a><div class="sti2">7.1. Configuration client</div></div>
+<div class="par">C’est le mode de fonctionnement du véhicule lorsqu’il est livré au client. Ce mode est téléchargé via l’outil de diagnostic.</div><div class="cha2"><a name="LABEL19"></a><div class="sti2">7.2. Configuration usine</div></div>
+<div class="par">Cette configuration est utilisée uniquement pendant la fabrication du véhicule.</div><div class="par">Cette configuration permet des tests unitaires et la réduction de la consommation électrique de la batterie.</div><div class="par">La configuration usine réduit la consommation électrique en forçant le mode économie par défaut.</div><div class="par">Le retour de la configuration usine en configuration client se fait par télécodage.</div><div class="par">Une sécurité permet de forcer le passage à la configuration client quand on dépasse 250 kilomètres.</div><div class="cha2"><a name="LABEL20"></a><div class="sti2">7.3. Configuration parc</div></div>
+<div class="par">Cette configuration est utilisée pour le stockage du véhicule sur parc.</div><div class="par">Elle permet à certains consommateurs d’énergie électrique de ne plus être alimentés en + permanent et de limiter ainsi la consommation d’énergie afin de garantir le démarrage du véhicule.</div><div class="par">Le shunt alimentant en + permanent les consommateurs est retiré au profit d’un fusible pour n’alimenter les consommateurs qu’en +APC.</div><div class="par">La configuration "parc" permet l’accès au véhicule&nbsp;(les serrures de portes et coffre sont opérationnelles).</div><div id="d4ep0fdd_4_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/dd/d4ep/d4ep0fdd.avif" class="image" height="360" width="615" id="d4ep0fdd_4"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d4ep0fdd</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/dd/d4ep/d4ep0fdd.avif" data-figure="1"><img id="d4ep0fdd_4_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="tli">Légende : 
+<ul>
+<li>K : Configuration client</li>
+<li>L : Configuration parc</li>
+</ul>
+</div>
+<div class="par">L’alimentation électrique des équipements est rétablie lors de l’apparition du +APC grâce au fusible parc.</div><div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">N°</td>
+<td colspan="1" rowspan="1">Désignation</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">14</td>
+<td colspan="1" rowspan="1">+ACC</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">15</td>
+<td colspan="1" rowspan="1">+BAT </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">16</td>
+<td colspan="1" rowspan="1">+APC</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">17</td>
+<td colspan="1" rowspan="1">Consommateurs permanents</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">"a"</td>
+<td colspan="1" rowspan="1">Shunt configuration client</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">"b"</td>
+<td colspan="1" rowspan="1">Fusible configuration parc</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL21"></a><div class="sti2">7.4. Configuration du "show-room"</div></div>
+<div class="par">Dans cette configuration le véhicule est connecté à une alimentation externe et n’a pas besoin de clé de contact.</div><div class="par">Un faisceau spécial "show-room" doit être installé afin d’avoir les fonctions souhaitées sans la présence de la clé de contact.</div><div class="par">Ce mode permet d’obtenir les fonctions normalement disponibles moteur tournant&nbsp;(pulseur d’air, affichage de la climatisation, etc.).</div><div class="par">Le mode économie est neutralisé, les réseaux sont maintenus réveillés, le véhicule peut donc fonctionner normalement sans limitation de temps.</div></div>

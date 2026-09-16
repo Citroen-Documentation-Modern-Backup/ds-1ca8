@@ -1,0 +1,60 @@
+{
+ "ref": "B1GB1UP0",
+ "refDisplay": "B1GB1UP0",
+ "title": "Caractéristiques : circuits de refroidissement",
+ "nature": "Caractéristiques - identifications",
+ "applicability": " DEPUIS OPR 9128",
+ "typDoc": "2",
+ "css": [
+  "css/Document/gammes.css",
+  "css/Document/texte.css",
+  "css/Document/common.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6P",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6P",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA3",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA3",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA4",
+   "variantKey": "B0D=B0DAB&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA4",
+   "variantKey": "B0D=B0DAB&B0F=B0F6S",
+   "fctId": "FCT0009"
+  }
+ ]
+}

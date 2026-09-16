@@ -1,0 +1,23 @@
+{
+ "ref": "023002212005",
+ "refDisplay": "0230 02 212005",
+ "title": "BOUGIES - MODULE - BOBINE ALLUMAGE",
+ "nature": "",
+ "applicability": "",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6P",
+   "fctId": "FCT0013"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6P",
+   "fctId": "FCT0013"
+  }
+ ]
+}

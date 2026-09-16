@@ -1,0 +1,18 @@
+{
+ "ref": "023004371110B",
+ "refDisplay": "0230 04 371110B",
+ "title": "TRANSMISSION TRANSVERSALE",
+ "nature": "",
+ "applicability": " DEPUIS OPR 10529 JUSQU’A OPR 11235",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0022"
+  }
+ ]
+}

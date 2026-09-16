@@ -1,0 +1,23 @@
+{
+ "ref": "023003434203A",
+ "refDisplay": "0230 03 434203A",
+ "title": "BARRES TORSION AVANT RESSORT",
+ "nature": "",
+ "applicability": "SUSPENSION NORMALE",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7P",
+   "fctId": "FCT0027"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0027"
+  }
+ ]
+}

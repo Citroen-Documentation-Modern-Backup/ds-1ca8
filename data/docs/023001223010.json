@@ -1,0 +1,18 @@
+{
+ "ref": "023001223010",
+ "refDisplay": "0230 01 223010",
+ "title": "CARTER HUILE FILTRE SONDE",
+ "nature": "",
+ "applicability": " JUSQU’A OPR 10072",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0008"
+  }
+ ]
+}

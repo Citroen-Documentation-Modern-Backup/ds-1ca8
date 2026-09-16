@@ -1,0 +1,296 @@
+<div id="title" class="section_titre"><table class="refDoc"><tbody><tr><td colspan="2" class="references">B2CB3KP0</td><td class="title">Principe de fonctionnement : Boîte de vitesses manuelle pilotée type MA</td></tr></tbody></table></div><div id="appl" class="section_appl">BVM MA PILOTEE</div><div class="section_corps" id="content"><div class="cha1"><div class="sti1">1. Fonctionnement en "automatique"</div></div>
+<div class="cha2"><div class="sti2">1.1. Généralités : Loi de passage des rapports</div></div>
+<div class="tli">Le point de fonctionnement de la boîte de vitesses est défini par les informations suivantes : 
+<ul>
+<li>Position papillon</li>
+<li>Vitesse et charge moteur du véhicule</li>
+</ul>
+</div>
+<div class="par">En fonctionnement, la décision de changement de rapport est prise par le calculateur à partir d’un jeu de courbes appelé "loi de passage".</div><div class="tli">Chaque loi de passage comprend : 
+<ul>
+<li>Les seuils de changement de rapport (montée et rétrogradage de rapports)</li>
+<li>Les points "kick-down"</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">1.2. Courbes de passage des rapports</div></div>
+<div id="b2cp33ud_1_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/ud/b2cp/b2cp33ud.avif" class="image" height="360" width="615" id="b2cp33ud_1"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp33ud</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/ud/b2cp/b2cp33ud.avif" data-figure="1"><img id="b2cp33ud_1_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">Exemple de loi de passage des rapports.</div><div class="par">          X - Vitesse véhicule .</div><div class="par">  Y - Position de la pédale d’accélérateur (en %).</div><div class="par">  (A) Courbe de passage 2ème vitesse vers 1ère vitesse.</div><div class="par">  (B) Courbe de passage 1ère vitesse vers 2ème vitesse.</div><div class="par">  (C) Courbe de passage 3ème vitesse vers 2ème vitesse.</div><div class="par">  (D) Courbe de passage 2ème vitesse vers 3ème vitesse.</div><div class="par">  (E) Courbe de passage 4ème vitesse vers 3ème vitesse.</div><div class="par">  (F) Courbe de passage 3ème vitesse vers 4ème vitesse.</div><div class="par">"  G" Point exemple 1.</div><div class="par">"  H" Point exemple 2.</div><div class="par">"  KD" Points de "kick-down" (rétrogradage).</div><div class="par">Le changement de rapport est obtenu lorsque le point de fonctionnement coupe la courbe (vitesse croissante ou décroissante).</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Les seuils de passage sont différents, en montée et en descente de rapport, de manière à éviter des changements de rapports répétés. </div></div>
+<div class="par">Dans tous les cas       , Les lois de passage permettent sur sollicitation du conducteur d’obtenir les performances maximales du véhicule.</div><div class="par">En cas d’enfoncement total de la pédale d’accélérateur, le calculateur passe automatiquement au point KD   (kick-down).</div><div class="tli">Exemple   1 : Véhicule à vitesse croissante : 
+<ul>
+<li>La pédale d’accélérateur est enfoncée à 80% de sa course</li>
+<li>Le véhicule est en 3ème vitesse</li>
+<li>La montée de rapport a lieu dès que le véhicule atteint la vitesse de 100 km/h</li>
+</ul>
+</div>
+<div class="tli">Exemple   2 : Véhicule à vitesse décroissante : 
+<ul>
+<li>La pédale d’accélérateur est enfoncée à 80% de sa course</li>
+<li>Le véhicule est en 4ème vitesse</li>
+<li>Le rétrogradage a lieu dès que la vitesse du véhicule descend au-dessous de 72 km/h</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">1.3. Autoadaptivité au passage des rapports</div></div>
+<div class="par">Le calculateur adapte le fonctionnement de la boîte de vitesses à la route, la charge moteur et au style de conduite.</div><div class="par">En fonctionnement, la décision de changement de rapport est prise par le calculateur à partir d’un jeu de courbes appelé "loi de passage".</div><div class="tli">Le calculateur utilise      9 lois de passage : 
+<ul>
+<li>6 Lois autoadaptatives (lois de référence)</li>
+<li>1 Loi spécifique au programme "neige"</li>
+<li>1 Loi de réchauffement Démarrage à froid</li>
+<li>1 Loi spécifique aux modes dégradés</li>
+</ul>
+</div>
+<div id="b2cp3m8d_2_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/8d/b2cp/b2cp3m8d.avif" class="image" height="360" width="615" id="b2cp3m8d_2"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp3m8d</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/8d/b2cp/b2cp3m8d.avif" data-figure="1"><img id="b2cp3m8d_2_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">      J - Lois "conducteur".</div><div class="par">  K - Lois "charge du véhicule".</div><div class="par">  (L1) Loi économique.</div><div class="par">  (L1-2) Loi intermédiaire : Économique - Médium.</div><div class="par">  (L2) Loi médium.</div><div class="par">  (L2-3) Loi intermédiaire : Médium -  Sport.</div><div class="par">  (L3) Loi SPORT.</div><div class="par">  (L4) Loi FREINAGE 1.</div><div class="par">  (L4-5) Loi intermédiaire : Freinage 1 - Freinage 2.</div><div class="par">  (L5) Loi FREINAGE 2.</div><div class="par">  (L6) Loi DESCENTE.</div><div class="par">  (L7) Loi NEIGE.</div><div class="tli">Les lois autoadaptatives sont les suivantes : 
+<ul>
+<li>Loi économique   (le gain en consommation est privilégié)</li>
+<li>Loi médium (comportement un peu plus sportif que la loi économique)</li>
+<li>Loi SPORT (conduite sportive)</li>
+<li>Loi FREINAGE 1 (loi adaptée aux faibles charges véhicule et faibles pentes)</li>
+<li>Loi FREINAGE 2 (loi adaptée aux fortes charges véhicule et fortes pentes)</li>
+<li>Loi DESCENTE (loi adaptée aux descentes, utilisation du frein moteur)</li>
+</ul>
+</div>
+<div class="par">Les lois   L1 à L7 sont mémorisées dans la mémoire du calculateur (lois de référence).</div><div class="par">Les lois   L1-2, L2-3, L4-5, L5-6 sont calculées dynamiquement par le calculateur de boîte de vitesses à partir des lois de référence.</div><div class="tli">Le calculateur adapte le changement de rapport en fonction des éléments suivants : 
+<ul>
+<li>Style de conduite</li>
+<li>Profil de la route   : Adhérence du revêtement Dénivelés de la route</li>
+<li>Moteur  : Charge  Régime moteur Température </li>
+</ul>
+</div>
+<div class="tli">Les principales informations prises en compte sont les suivantes : 
+<ul>
+<li>Information  position papillon</li>
+<li>Vitesse de changement de position du papillon</li>
+<li>Position moyenne du papillon</li>
+<li>Variation de la vitesse de sortie de la boîte de vitesses</li>
+<li>L’accélération du véhicule (couple moteur)</li>
+<li>Vitesse véhicule </li>
+</ul>
+</div>
+<div class="tli">Pour adapter le comportement de la boîte de vitesses à la demande du conducteur : 
+<ul>
+<li>Le calculateur choisi la loi de référence la mieux adaptée parmi les lois "conducteur"</li>
+<li>Le calculateur choisi la loi de référence la mieux adaptée parmi les lois "charge du véhicule"</li>
+<li>Le calculateur de boîte de vitesses calcule ensuite à partir des lois choisies, une loi intermédiaire plus adaptée la sélectionne</li>
+</ul>
+</div>
+<div class="par">Le choix s’effectue à partir de valeurs moyennes et des dernières minutes de fonctionnement.</div><div class="par">Le choix peut être corrigé momentanément       (voir "élévation momentanée de la sportivité").</div><div class="par">Le calculateur utilise une infinité de lois de passage.</div><div class="par">Le calculateur de boîte de vitesses provoque le changement de rapport après validation du rapport à engager.</div><div class="par">Les rapports       1 à 5 s’enchaînent automatiquement sans intervention du conducteur.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Utilisation du programme "automatique"   Se reporter à la gamme : Fonctions principales : Boîte de vitesses manuelle pilotée type MA. </div></div>
+<div class="cha1"><div class="sti1">2. Lois spécifiques</div></div>
+<div class="cha2"><div class="sti2">2.1. Loi de réchauffement</div></div>
+<div class="par">Cette loi de fonctionnement est activée moteur froid.</div><div class="tli">La loi de réchauffement : 
+<ul>
+<li>Est activée durant le temps d’une temporisation prédéterminée en fonction de chaque motorisation</li>
+<li>Est désactivée en fin de temporisation</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">2.2. Loi NEIGE</div></div>
+<div class="par">Le patinage des roues sélectionne automatiquement le programme "neige".</div><div class="tli">Véhicule  équipé de l’ESP : 
+<ul>
+<li>Le calculateur d’ESP informe le calculateur de boîte de vitesses du patinage des roues</li>
+<li>Le calculateur de boîte de vitesses sélectionne automatiquement la loi "neige"</li>
+</ul>
+</div>
+<div class="tli">Véhicule équipé d’un ABS : 
+<ul>
+<li>Le calculateur d’un ABS informe le calculateur de boîte de vitesses de la vitesses des   4 roues</li>
+<li>Le calculateur de boîte de vitesses détermine le patinage des roues à partir de la vitesse des roues et sélectionne la loi "neige"</li>
+</ul>
+</div>
+<div class="par">Dès la fin de patinage des roues le calculateur sélectionne la loi active précèdent le patinage des roues.</div><div class="tli">Particularités : 
+<ul>
+<li>Interdiction de passage de la 1ère vitesse    . Levier de sélection de vitesses en position centrale</li>
+<li>Les changements de rapports sont moins fréquents que pour les autres programmes</li>
+<li>Un kick-down n’entraîne le rétrogradage que si la vitesse véhicule est inférieure à 15 km/h</li>
+<li>Permet un fonctionnement en douceur (pas de variation brusque de couple aux roues)</li>
+<li>Rétrogradage forcé lors d’un freinage</li>
+</ul>
+</div>
+<div class="par">Sélecteur de rapport en position centrale, le démarrage s’effectue en   2ème vitesse.</div><div class="cha1"><div class="sti1">3. Autres fonctions autoadaptatives</div></div>
+<div class="cha2"><div class="sti2">3.1. Interdiction de montée de rapport (lever de pied rapide)</div></div>
+<div class="par">Cette fonction empêche le passage intempestif du rapport supérieur lors d’un lever de pied rapide  (frein moteur en décélération).</div><div class="par">Cette fonction est active lorsque le véhicule est dans une situation de virage   (détection par les informations de vitesse des roues).</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Cette fonction est également active lorsque le véhicule est en descente   , Pédale d’accélérateur relâchée. </div></div>
+<div class="cha2"><div class="sti2">3.2. Élévation momentanée de la Sportivité</div></div>
+<div class="par">Cette fonction est activée lors d’une sollicitation rapide de la pédale d’accélérateur en programme "automatique".</div><div class="par">Le calculateur passe temporairement à une loi de fonctionnement plus sportive permettant de privilégier les reprises.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Au relâcher de la pédale d’accélérateur, le calculateur repasse immédiatement à la loi utilisée avant l’élévation momentanée de la sportivité. </div></div>
+<div class="cha2"><div class="sti2">3.3. Blocage de rapport au changement de loi</div></div>
+<div class="par">Dans certaines conditions, lorsque le calculateur change de loi de fonctionnement le rapport engagé est bloqué.</div><div class="tli">Le rapport est débloqué dans les conditions suivantes : 
+<ul>
+<li>Pied relevé de la pédale d’accélérateur</li>
+<li>Accélération du véhicule après une temporisation programmée</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">3.4. Rétrogradage au freinage</div></div>
+<div class="par">Le rétrogradage lors d’un freinage est autoadaptatif.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Le rétrogradage peut être forcé dans certaines conditions de roulage            (suivant loi utilisée). </div></div>
+<div class="par">Dans certains cas, le calculateur de boîte de vitesses peut provoquer un triple rétrogradage pour favoriser le frein moteur.</div><div class="cha1"><div class="sti1">4. Fonctionnement en "impulsionnel"</div></div>
+<div class="tli">Particularités du programme "impulsionnel" : 
+<ul>
+<li>Le conducteur provoque le changement de rapport de vitesses à l’aide du sélecteur de rapport ou des commandes de vitesses au volant de direction</li>
+<li>Le conducteur peut choisir d’effectuer un double rétrogradage</li>
+<li>Dans certains cas d’utilisation, le calculateur de boîte de vitesses ignore les demandes du conducteur    (*)</li>
+<li>Dans certains cas d’utilisation, le calculateur de boîte de vitesses provoque un changement de rapport (*)</li>
+<li>Le conducteur peut à tout moment choisir le programme "automatique"</li>
+</ul>
+</div>
+<div class="par">  (*) Sécurité d’utilisation : Anticalage du moteur thermique, protection contre le surrégime du moteur thermique.</div><div class="par">Le calculateur provoque le changement de rapport après validation de la demande du conducteur.</div><div class="par">Utilisation du programme "impulsionnel"     Se reporter à la gamme : Fonctions principales : Boîte de vitesses manuelle pilotée type MA.</div><div class="cha1"><div class="sti1">5. Changement de rapport</div></div>
+<div class="tli">Le changement de rapport est effectué avec les informations suivantes : 
+<ul>
+<li>Position de la pédale d’accélérateur</li>
+<li>Le rapport à engager</li>
+</ul>
+</div>
+<div class="tli">Lors d’un changement de rapport, le calculateur de boîte de vitesses : 
+<ul>
+<li>Pilote le calculateur moteur en couple et en régime pour effectuer le changement de rapport</li>
+<li>Pilote simultanément les actionneurs    (actionneur d’embrayage, actionneur de boîte de vitesses)</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">5.1. Déroulement d’un changement de rapport</div></div>
+<div id="b2cp3m9d_3_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/9d/b2cp/b2cp3m9d.avif" class="image" height="360" width="615" id="b2cp3m9d_3"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp3m9d</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/9d/b2cp/b2cp3m9d.avif" data-figure="1"><img id="b2cp3m9d_3_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">   (M) Exemple  : Montée de rapport.</div><div class="par">  (P) Exemple  : Rétrogradage, véhicule en accélération.</div><div class="par">"  t" Temps.</div><div class="par">"  N" Rapport N.</div><div class="par">"  N+1" Rapport N+1 (rapport supérieur).</div><div class="par">"  N-1" Rapport N-1 (rapport inférieur).</div><div class="par">  (a) Régime moteur avant changement de rapport.</div><div class="par">  (b) État embrayé (embrayage fermé).</div><div class="par">  (c) État débrayé (embrayage ouvert).</div><div class="par">  (d) Régime moteur après changement de rapport.</div><div class="par"> (Q) Début de changement de rapport.</div><div class="par">  (R) Phase d’ouverture d’embrayage.</div><div class="par">  (S) Phase de régulation du régime moteur par le calculateur de boîte de vitesses.</div><div class="par">  (U) Phase de fermeture d’embrayage.</div><div class="par">  (V) Fin de changement de rapport.</div><div class="par">Le conducteur perçoit le changement de rapport pendant les phase de   R, S, U.</div><div class="par">Les phases de changement de rapport sont identiques pour les deux programmes   (programme "automatique" et "impulsionnel").</div><div class="cha2"><div class="sti2">5.2. Principe général de changement de rapport</div></div>
+<div class="par">Un changement de rapport est un enchaînement de phases successives.</div><div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="2">Déroulement des opérations</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Phase de fonctionnement</td>
+<td colspan="1" rowspan="1">Actions du calculateur pendant une phase de changement de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="6">   (Q)</td>
+<td colspan="1" rowspan="1">Le calculateur de boîte de vitesses envoie les informations suivantes au calculateur moteur par le Réseau CAN</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Information changement de rapport en cours</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Information interdiction de changement d’état compresseur (éviter la perturbation du changement de rapport)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L’embrayage est fermé (b)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">La demande du conducteur est ignorée (pédale d’accélérateur)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses envoie l’information rapport engagé au boîtier de servitude intelligent pour permettre l’affichage au combiné</td>
+</tr><tr valign="top"><td colspan="1" rowspan="4">(R)</td>
+<td colspan="1" rowspan="1">Le calculateur de boîte de vitesses provoque l’ouverture progressive de l’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Pendant l’ouverture de l’embrayage , Le calculateur de boîte de vitesses envoie la valeur de couple maximal admissible par la boîte de vitesses (information couple maximum admissible par la boîte de vitesses) au calculateur moteur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">La consigne de couple maximum admissible par la boîte de vitesses est réajustée en permanence par le calculateur de boîte de vitesses en fonction de l’ouverture de l’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Sur ordre du calculateur de boîte de vitesses, le calculateur moteur réduit le couple moteur jusqu’à arriver à une valeur de couple =0 Nm à la fin de la phase R</td>
+</tr><tr valign="top"><td colspan="1" rowspan="6">(S)</td>
+<td colspan="1" rowspan="1">Pour éviter l’emballement moteur (l’embrayage est ouvert (c)) le calculateur de boîte de vitesses envoie les informations suivantes au calculateur moteur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Demande de régulation en régime du moteur thermique</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- La valeur de consigne de régime du moteur thermique</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Pendant cette phase le calculateur de boîte de vitesses pilote le calculateur moteur avec une consigne de régime moteur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">La consigne de régime moteur est ajustée en permanence de façon à obtenir progressivement le régime moteur correspondant au rapport engager (d)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses commande l’actionneur de boîte de vitesses pour effectuer le changement de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="6">(U)</td>
+<td colspan="1" rowspan="1">L’actionneur de boîte de vitesses a engagé le rapport demandé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses provoque une fermeture progressive de l’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Pendant la fermeture de l’embrayage , Le calculateur de boîte de vitesses envoie la valeur de couple maximal admissible par la boîte de vitesses (information couple maximum admissible par la boîte de vitesses) au calculateur moteur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">La consigne de couple maximum admissible par la boîte de vitesses est réajusté en permanence par le calculateur de boîte de vitesses en fonction de la fermeture de l’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Sur ordre du calculateur de boîte de vitesses, le calculateur moteur augmente progressivement le couple moteur jusqu’à arriver à une valeur de couple correspondant à la demande du conducteur (pédale d’accélérateur)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le régime moteur est ajusté à la vitesses véhicule et au rapport engagé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">(V)</td>
+<td colspan="1" rowspan="1">Le changement de rapport est terminé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L’embrayage est fermé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">La demande du conducteur n’est plus ignorée (pédale d’accélérateur)</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><div class="sti2">5.3. Changement de rapport montant (M)</div></div>
+<div class="par">Le calculateur de boîte de vitesses pilote le calculateur moteur pour obtenir un régime moteur adapté au rapport engagé  N+1 et à la vitesse du véhicule.</div><div class="par">Le calculateur de boîte de vitesses provoque une réduction du régime moteur (  d).</div><div class="cha2"><div class="sti2">5.4. Changement de rapport descendant (rétrogradage) (P)</div></div>
+<div class="par">Le calculateur de boîte de vitesses pilote le calculateur moteur pour obtenir un régime moteur adapté au rapport engagé  N-1 et à la vitesse du véhicule.</div><div class="par">Le calculateur de boîte de vitesses provoque l’augmentation du régime moteur (  d).</div><div class="cha2"><div class="sti2">5.5. Phase de fermeture de l’embrayage</div></div>
+<div class="par">Le calculateur de boîte de vitesses peut modifier la vitesse de fermeture de l’embrayage ( U).</div><div class="par">Le calculateur peut utiliser   3 vitesses de fermeture de l’embrayage, de la plus lente (la plus confortable) à la plus rapide (la plus sportive).</div><div class="par">La vitesse de fermeture de l’embrayage en fin de changement de rapport dépend du style de conduite du conducteur.</div><div class="cha2"><div class="sti2">5.6. Double changement de rapport</div></div>
+<div class="par">Programme "Impulsionnel" actif    , Le conducteur peut demander un nouveau changement de rapport pendant la phase S.</div><div class="par">Le calculateur de boîte de vitesses autorise l’engagement d’un autre rapport tant que la phase de synchronisation du rapport précédent n’a pas débuté.</div><div class="par">Si la phase de synchronisation a débuté, le changement de rapport se poursuit jusqu’à la phase     V.</div><div class="cha2"><div class="sti2">5.7. Difficultés d’engagement de rapport</div></div>
+<div class="par">Dans certains cas l’engagement d’un rapport peut être difficile.</div><div class="par">Dans ce cas le calculateur de boîte de vitesses effectue deux tentatives de changement de rapport supplémentaires.</div><div class="par">Véhicule à l’arrêt      , Le calculateur provoque une ouverture et une fermeture de l’embrayage pour favoriser l’engagement du rapport.</div><div class="par">Trois échecs d’engagement d’un rapport consécutifs, se traduit par la désactivation provisoire du rapport correspondant.</div><div class="par">Un défaut est enregistré dans la mémoire du calculateur de boîte de vitesses.</div><div class="cha1"><div class="sti1">6. Autoadaptativité</div></div>
+<div class="par">Le calculateur de boîte de vitesses prend en compte le vieillissement de la boîte de vitesses.</div><div class="tli">En fonctionnement le calculateur provoque régulièrement l’apprentissage automatique : 
+<ul>
+<li>De la position du point de léchage de l’embrayage</li>
+<li>De la position du point de début de synchronisation        (synchroniseur)</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">7. Affichage des défauts - Fonctionnement en modes dégradés</div></div>
+<div class="cha2"><div class="sti2">7.1. Affichage défauts</div></div>
+<div class="par">Le clignotement simultané des voyants "auto" et "neige" signale une anomalie de fonctionnement.</div><div class="par">En complément l’afficheur alphanumérique affiche un tiret (   4).</div><div class="cha2"><div class="sti2">7.2. Fonctionnement en modes dégradés</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Défaut constaté</td>
+<td colspan="1" rowspan="1">Effet</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">Défaut apprentissages incomplets</td>
+<td colspan="1" rowspan="1">Le calculateur de boîte de vitesses provoque l’initialisation des actionneurs lors de la mise du contact et de l’appui sur la pédale de frein</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le temps d’attente nécessaire à l’initialisation de la position des actionneurs varie entre  10 secondes et 1 minute</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Il est impossible de démarrer le moteur thermique pendant les opérations d’initialisation de la position des actionneurs</td>
+</tr><tr valign="top"><td colspan="1" rowspan="13">Défaut boîte de vitesses</td>
+<td colspan="1" rowspan="1">Le rapport ne reste pas engagé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Interdiction du passage du rapport défectueux</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Choix d’un autre rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le rapport ne peut pas être engagé (après 3 tentatives)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Interdiction du passage du rapport défectueux</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Choix d’un autre rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le rapport ne peut pas être désengagé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Maintien du rapport engagé en roulage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Rapport engagé  : 3, 4 ou 5 , Dès l’arrêt du véhicule, le calculateur de boîte de vitesses provoque le débrayage (roulage impossible)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Rapport engagé  : R, 1, 2 Le roulage est autorisé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut alimentation calculateur</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Pas de fonctionnement de la boîte de vitesses</td>
+</tr><tr valign="top"><td colspan="1" rowspan="4">Défaut signal moteur de l’actionneur d’embrayage - Courant incorrect</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Maintien du rapport engagé en roulage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Dès l’arrêt du véhicule, le calculateur de boîte de vitesses engage le rapport "N"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Roulage impossible</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut calculateur - Étage de sortie</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut calculateur - RAM</td>
+<td colspan="1" rowspan="1">Les actionneurs ne sont plus commandés (actionneur de boîte de vitesses, actionneur d’embrayage)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut calculateur - ROM</td>
+<td colspan="1" rowspan="1">Roulage impossible</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut alimentation capteur de position - Actionneur d’embrayage  Actionneur de passage</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Conduite avec confort réduit</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut alimentation capteur de position - Actionneur de sélection</td>
+<td colspan="1" rowspan="1">-</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut signal de position - Actionneur de sélection</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Conduite avec confort réduit</td>
+</tr><tr valign="top"><td colspan="1" rowspan="10">Défaut signal de position - Actionneur de passage</td>
+<td colspan="1" rowspan="1">Le calculateur essaie de commander l’actionneur en boucle ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le changement de rapport est possible en boucle ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Le calculateur de boîte de vitesses sélectionne automatiquement le programme "impulsionnel"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Changement de rapport limité</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Perte de confort</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Pas de double, ni de triple changement de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le changement de rapport en boucle ouverte est impossible</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Maintien du rapport engagé en roulage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Dès l’arrêt du véhicule, le calculateur de boîte de vitesses engage le rapport "N"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Roulage impossible</td>
+</tr></tbody></table>
+</div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Défaut constaté</td>
+<td colspan="1" rowspan="1">Effet</td>
+</tr><tr valign="top"><td colspan="1" rowspan="10">Défaut signal de position   - Actionneur d’embrayage</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur essaie de commander l’actionneur en boucle ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L’ouverture et la fermeture est possible en boucle ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Le calculateur de boîte de vitesses sélectionne automatiquement le programme "impulsionnel"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Changement de rapport limité</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Perte de confort</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L’ouverture et la fermeture de l’embrayage est impossible en boucle ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Maintien du rapport engagé en roulage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Dès l’arrêt du véhicule, le calculateur de boîte de vitesses engage le rapport "N"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">- Roulage impossible</td>
+</tr><tr valign="top"><td colspan="1" rowspan="4">Défaut signal sélecteur de rapport</td>
+<td colspan="1" rowspan="1">Désactivation du sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui , Uniquement après avoir sélectionné le programme "automatique"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L’engagement des rapports "N" et "R" est possible avec les commandes de vitesse au volant de direction</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses sélectionne le programme "automatique" si les commandes de vitesses au volant de direction et le sélecteur de rapport sont inutilisables</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">Défaut signal commande de vitesses au volant de direction</td>
+<td colspan="1" rowspan="1">Désactivation des commandes de vitesses au volant de direction</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui , Uniquement après avoir sélectionné le programme "automatique"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses sélectionne le programme "automatique" si les commandes de vitesses au volant de direction et le sélecteur de rapport sont inutilisables</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">Défaut signal vitesse d’entrée</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Non</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur de boîte de vitesses prend en compte la vitesse des roues</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Perte de confort et augmentation du temps de passage de vitesses</td>
+</tr><tr valign="top"><td colspan="1" rowspan="3">Défaut calculateur - Power latch</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Non</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Le calculateur reste activé, la batterie peut se décharger</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Un débranchement de la batterie pendant le power latch provoque l’enregistrement du défaut</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut signal moteur de l’actionneur de passage</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Oui</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Maintien du rapport engagé en roulage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut signal moteur de l’actionneur de sélection</td>
+<td colspan="1" rowspan="1">À l’arrêt du véhicule le calculateur de boîte de vitesses ouvre l’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Roulage impossible</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Défaut embrayage</td>
+<td colspan="1" rowspan="1">Clignotement des voyants "auto" et "neige" : Non</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Réduction du nombre de changement de rapport</td>
+</tr></tbody></table>
+</div>
+</div>

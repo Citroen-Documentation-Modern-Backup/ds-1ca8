@@ -1,0 +1,18 @@
+{
+ "ref": "023006173006L",
+ "refDisplay": "0230 06 173006L",
+ "title": "CANALISATION FIX FILTRE CARBURANT",
+ "nature": "",
+ "applicability": "BICARBURATION GNV",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0010"
+  }
+ ]
+}

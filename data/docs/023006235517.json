@@ -1,0 +1,28 @@
+{
+ "ref": "023006235517",
+ "refDisplay": "0230 06 235517",
+ "title": "RADIATEUR",
+ "nature": "",
+ "applicability": "BVM5 ET RADIATEUR EP:27 - 16 DM2 ALU BRASE JUSQU’A OPR 12501",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0009"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0009"
+  }
+ ]
+}

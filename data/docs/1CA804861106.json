@@ -1,0 +1,19 @@
+{
+ "ref": "1CA804861106",
+ "refDisplay": "1CA8 0 486 1106",
+ "title": "CAPTEUR TEMPÉRATURE BATTERIE",
+ "nature": "",
+ "applicability": "(800A) C3 BERLINE 5PTES INJECTION ET3J4 BVM PILOTEE 5 RAPPORTS AVEC STOP AND START OU (8009) C3 BERLINE 5PTES INJECTION ET3J4 BVM PILOTEE 5 RAPPORTS",
+ "typDoc": "6",
+ "css": [
+  "css/Document/baremes.css",
+  "css/Document/common.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F1Z",
+   "fctId": "FCT0305"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "ref": "023001112010",
+ "refDisplay": "0230 01 112010",
+ "title": "CULASSE - COUVRE CULASSE",
+ "nature": "",
+ "applicability": " DEPUIS DAM 0927582 OU  DEPUIS DAM 09128CA SAUF TOUT ALCOOL OU ESSENCE RON 95 (FLEX FUEL)",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0006"
+  }
+ ]
+}

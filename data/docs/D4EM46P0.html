@@ -1,0 +1,170 @@
+<div id="title" class="section_titre"><table class="refDoc"><tbody><tr><td colspan="2" class="references">D4EM46P0</td><td class="title">Opérations après-vente : Climatisation </td></tr></tbody></table></div><div id="appl" class="section_appl"></div><div class="section_corps" id="content"><div class="cha1"><div class="sti1">1. Lecture des défauts</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="2">Il est possible de lire les défauts suivants à l’aide de l’outil de diagnostic</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Description du défaut</td>
+<td colspan="1" rowspan="1">Intitulé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut touche de commande du tableau de climatisation</td>
+<td colspan="1" rowspan="1">Non caractérisé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut sonde température d’eau</td>
+<td colspan="1" rowspan="1">Valeur reçue incorrecte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut sonde température extérieure</td>
+<td colspan="1" rowspan="1">Valeur reçue incorrecte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut information vitesse véhicule</td>
+<td colspan="1" rowspan="1">Valeur reçue incorrecte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut information absence de communication entre le BSI et le calculateur de climatisation</td>
+<td colspan="1" rowspan="1">Non caractérisé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut sonde température évaporateur</td>
+<td colspan="1" rowspan="1">Valeur reçue incorrecte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut sonde température habitacle</td>
+<td colspan="1" rowspan="1">En court-circuit ou en circuit ouvert</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut consigne pulseur(*)</td>
+<td colspan="1" rowspan="1">En court-circuit ou en circuit ouvert</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut moteur recyclage</td>
+<td colspan="1" rowspan="1">Non caractérisé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut moteur distribution</td>
+<td colspan="1" rowspan="1">Circuit ouvert</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut moteur mixage</td>
+<td colspan="1" rowspan="1">Circuit ouvert</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut commande pulseur</td>
+<td colspan="1" rowspan="1">En court-circuit ou en circuit ouvert</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Défaut rotor de la sonde température habitacle bloqué</td>
+<td colspan="1" rowspan="1">Non caractérisé</td>
+</tr></tbody></table>
+</div>
+<div class="par">(  *) : Tension de consigne (0 à 5 V) envoyée par le tableau de climatisation au module de commande du pulseur.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : Les défauts fugitifs sont archivés dans le BSI. </div></div>
+<div class="cha1"><div class="sti1">2. Test actionneur</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="4">Il est possible d’effectuer les tests suivants à l’aide de l’outil de diagnostic</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Intitulé</td>
+<td colspan="1" rowspan="1">Précisions sur l’activation  (durée, fréquence, cycle)</td>
+<td colspan="1" rowspan="1">Message associé</td>
+<td colspan="1" rowspan="1">Codification</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Moteur recyclage(*)</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 0 à 100 % + 100 à 0 %)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’aller/retour du moteur</td>
+<td colspan="1" rowspan="1">ACTRECYCLAGE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Moteur distribution(*)</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 0 à 100 % + 100 à 0 %)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’aller/retour du moteur</td>
+<td colspan="1" rowspan="1">ACTDISTRIBUTION</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Moteur mixage(*)</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 0 à 100 % + 100 à 0 %)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’aller/retour du moteur</td>
+<td colspan="1" rowspan="1">ACTMIXAGE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Allumage afficheur</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 1 allumage + 1 extinction)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’allumage et d’extinction de l’afficheur</td>
+<td colspan="1" rowspan="1">ACTAFFICHEURS</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Niveau éclairage</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 1 à 16 + 1 à 16 niveaux d’éclairement)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’éclairage progressif</td>
+<td colspan="1" rowspan="1">ACTECLAIRAGE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Moteur pulseur(**)</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 1 montée progressive vitesse pulseur + 1 descente progressive de la vitesse)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles de montées et de descentes progressives de la vitesse du pulseur</td>
+<td colspan="1" rowspan="1">ACTPULSEUR</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"> touches</td>
+<td colspan="1" rowspan="1">Effectuer 2 cycles. (1 cycle = 1 allumage + 1 extinction)</td>
+<td colspan="1" rowspan="1">Vérifier les 2 cycles d’allumage et d’extinction de l’afficheur</td>
+<td colspan="1" rowspan="1">ACTTOUCHE</td>
+</tr></tbody></table>
+</div>
+<div class="par">(  *) : Pour entendre l’activation de l’élément, effectuer les tests actionneurs à l’intérieur du véhicule, vitres et portières fermées.</div><div class="par">(  **) : Le test actionneur moteur pulseur s’effectue moteur tournant.</div><div class="cha1"><div class="sti1">3. Télécodage</div></div>
+<div class="tli">Il est possible de télécoder les paramètres suivants à l’aide de l’outil de diagnostic : 
+<ul>
+<li>Unité de température : °C ou °F</li>
+<li>Type de motorisation : Non HDI ou HDI</li>
+<li>Type de véhicule : Nom commercial du véhicule(C3...)</li>
+<li>Destination : Europe, Mercosur, Asie</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">4. Lecture des paramètres</div></div>
+<div class="cha2"><div class="sti2">4.1. État des sondes et du pulseur</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Il est possible de lire les paramètres suivants à l’aide de l’outil de diagnostic</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Intitulé(*)</td>
+<td colspan="1" rowspan="1">Unité</td>
+<td colspan="1" rowspan="1">Codification</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Alimentation +VAN</td>
+<td colspan="1" rowspan="1"> Volt(V)</td>
+<td colspan="1" rowspan="1">Tension batterie </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Température intérieure</td>
+<td colspan="1" rowspan="1">Degrés Celsius(°C)</td>
+<td colspan="1" rowspan="1">Température inter</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Consigne de température</td>
+<td colspan="1" rowspan="1">Degrés Celsius(°C)</td>
+<td colspan="1" rowspan="1">Cons température</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Position de la distribution</td>
+<td colspan="1" rowspan="1">-</td>
+<td colspan="1" rowspan="1">Cons distribution</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Tension recopie pulseur(*)</td>
+<td colspan="1" rowspan="1"> Volt(V)</td>
+<td colspan="1" rowspan="1">Tension reco pulseur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Tension pulseur</td>
+<td colspan="1" rowspan="1"> Volt(V)</td>
+<td colspan="1" rowspan="1">Tension pulseur</td>
+</tr></tbody></table>
+</div>
+<div class="par">(  *)Tension recopie pulseur : Valeur complémentaire de la tension moteur pulseur par rapport à la tension d’alimentation(tension alimentation = tension moteur pulseur + tension recopie pulseur).</div><div class="cha2"><div class="sti2">4.2. État des actionneurs</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Intitulé(*)</td>
+<td colspan="1" rowspan="1">Valeur en %</td>
+<td colspan="1" rowspan="1">État du paramètre</td>
+<td colspan="1" rowspan="1">Codification</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">État du mixage(*)</td>
+<td colspan="1" rowspan="1">0 à 100</td>
+<td colspan="1" rowspan="1">-</td>
+<td colspan="1" rowspan="1">ETATVOLETMIX</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">État de la distribution(*)</td>
+<td colspan="1" rowspan="1">0 à 100</td>
+<td colspan="1" rowspan="1">-</td>
+<td colspan="1" rowspan="1">État distribution</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">État du recyclage</td>
+<td colspan="1" rowspan="1">000. 050. 100</td>
+<td colspan="1" rowspan="1">Recyclage. Déplacement en cours. Air extérieur </td>
+<td colspan="1" rowspan="1">ETATVOLETRECYC</td>
+</tr></tbody></table>
+</div>
+<div class="par">(  *) : Position distribution et mixage valeurs remontées uniquement sur les calculateurs de climatisation à régulation tout automatique(RFTA).</div><div class="cha2"><div class="sti2">4.3. État des touches du calculateur de climatisation</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Intitulé</td>
+<td colspan="1" rowspan="1">État du paramètre</td>
+<td colspan="1" rowspan="1">Codification</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande de distribution.</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSDISTRIBUTION</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande recyclage</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSRECIRCULATION</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande dégivrage et visibilité</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSVISIBILITE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande pulseur -</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSPULSEURMOINS</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande pulseur +</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSPULSEURPLUS</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande température -</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSTEMPERATURE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande température +</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSTEMPERATURE</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande lunette arrière chauffante et rétroviseurs chauffants</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSIGNELUCH</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande de distribution</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">CONSDISTRIBUTION</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Demande AC</td>
+<td colspan="1" rowspan="1">0 : Inactivé. 1 : Activé</td>
+<td colspan="1" rowspan="1">Consigne AC</td>
+</tr></tbody></table>
+</div>
+</div>

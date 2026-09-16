@@ -1,0 +1,85 @@
+{
+ "ref": "C5HG3CP0",
+ "refDisplay": "C5HG3CP0",
+ "title": "Dépose - repose : filtre à pollen",
+ "nature": "Dépose-pose",
+ "applicability": "REFRIGERATION SIMPLE ET (RA) ARGENTINE OU REFRIGERATION AUTOMATIQUE ET (RA) ARGENTINE OU REFRIGERATION SIMPLE ET (BR) BRESIL OU REFRIGERATION AUTOMATIQUE ET (BR) BRESIL OU REFRIGERATION SIMPLE DEPUIS OPR 9128",
+ "typDoc": "2",
+ "css": [
+  "css/Document/gammes.css",
+  "css/Document/texte.css",
+  "css/Document/common.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6P",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7P",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7Q",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F1Z",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F3N",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6P",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7Q",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F3N",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA4",
+   "variantKey": "B0D=B0DAB&B0F=B0F6Q",
+   "fctId": "FCT0347"
+  },
+  {
+   "ldp": "1CA4",
+   "variantKey": "B0D=B0DAB&B0F=B0F6S",
+   "fctId": "FCT0347"
+  }
+ ]
+}

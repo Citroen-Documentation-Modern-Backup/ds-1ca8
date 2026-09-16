@@ -1,0 +1,18 @@
+{
+ "ref": "023004451605",
+ "refDisplay": "0230 04 451605",
+ "title": "FREINS ARRIERE DISQUE ETRIER PLAQUETTES",
+ "nature": "",
+ "applicability": "DISQUES AR JUSQU’A OPR 11578",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0041"
+  }
+ ]
+}

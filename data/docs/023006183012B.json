@@ -1,0 +1,18 @@
+{
+ "ref": "023006183012B",
+ "refDisplay": "0230 06 183012B",
+ "title": "COLLECTEUR CATALYSEUR ECHAPP AV",
+ "nature": "",
+ "applicability": " DEPUIS OPR 10101",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F1Z",
+   "fctId": "FCT0011"
+  }
+ ]
+}

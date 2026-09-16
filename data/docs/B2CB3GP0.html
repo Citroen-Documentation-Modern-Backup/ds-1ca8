@@ -1,0 +1,517 @@
+<div id="title" class="section_titre"><table class="refDoc"><tbody><tr><td colspan="2" class="references">B2CB3GP0</td><td class="title">Rôle et implantation : Éléments du système  - Boîte de vitesses manuelle pilotée type MA</td></tr></tbody></table></div><div id="appl" class="section_appl">BVM MA PILOTEE</div><div class="section_corps" id="content"><div class="cha1"><div class="sti1">1. Calculateur de boîte de vitesses (1660)</div></div>
+<div class="cha2"><div class="sti2">1.1. Rôle</div></div>
+<div class="tli">Le calculateur assure les fonctions suivantes : 
+<ul>
+<li>Le changement de rapport par le pilotage électrique des actionneurs  (actionneur d’embrayage, actionneur de boîte de vitesses)</li>
+<li>Gestion et autoadaptativité du passage des rapports et des programmes (programme "automatique")</li>
+<li>Mémorisation des caractéristiques des actionneurs (apprentissages)</li>
+<li>Commande de l’affichage au combiné</li>
+<li>Dialogue avec d’autres calculateurs (BVA, BSI, ABS, ...) par le réseau CAN</li>
+<li>Autodiagnostic et modes de secours (priorité est donnée à la mobilité du véhicule)</li>
+</ul>
+</div>
+<div class="tli">Le calculateur de boîte de vitesses acquiert les informations des éléments suivants : 
+<ul>
+<li>Le sélecteur de programme</li>
+<li>Le sélecteur de rapport</li>
+<li>Les commandes de vitesses au volant de direction</li>
+<li>Le contacteur de stop </li>
+<li>Les capteurs de position de l’actionneur d’embrayage</li>
+<li>Les capteurs de position de l’actionneur de sélection</li>
+<li>Les capteurs de position de l’actionneur de passage</li>
+<li>Le capteur de vitesse d’entrée de boîte de vitesses </li>
+</ul>
+</div>
+<div class="tli">Le calculateur de boîte de vitesses échange des informations avec les calculateurs suivants : 
+<ul>
+<li>Calculateur moteur </li>
+<li>Calculateur ESP ou ABS (*)</li>
+<li>Boîtier de servitude intelligent </li>
+</ul>
+</div>
+<div class="par">  (*) Selon version.</div><div class="tli">Avantages du dialogue entre le calculateur de boîte de vitesses et le calculateur moteur : 
+<ul>
+<li>Permettre le changement de rapport sans relâcher la pédale d’accélérateur   (programme "automatique" et "impulsionnel")</li>
+<li>Permettre l’estompage du couple pendant un changement de rapport</li>
+<li>Permettre de piloter le régime moteur pendant un changement de rapport</li>
+<li>Augmenter la protection mécanique du moteur et de la boîte de vitesses</li>
+<li>Améliorer l’agrément de conduite</li>
+<li>Augmenter la sécurité d’utilisation</li>
+</ul>
+</div>
+<div class="tli">En exploitant ces informations, le calculateur commande : 
+<ul>
+<li>Le relais d’interdiction démarreur</li>
+<li>L’actionneur d’embrayage </li>
+<li>L’actionneur de boîte de vitesses</li>
+</ul>
+</div>
+<div class="par">Les actionneurs sont pilotés par le calculateur de boîte de vitesses par des étages de commande intégrés au calculateur.</div><div class="tli">Les étages de commande du calculateur de boîte de vitesses permettent : 
+<ul>
+<li>De commander chaque moteur électrique dans les deux sens de rotation</li>
+<li>De faire varier la vitesse de rotation des moteurs électriques</li>
+<li>De mesurer le courant absorbé par chaque moteur électrique</li>
+</ul>
+</div>
+<div class="par">L’actualisation du logiciel du calculateur s’effectue par téléchargement       (calculateur équipé d’une flash EPROM).</div><div class="cha2"><div class="sti2">1.2. Particularités électriques</div></div>
+<div class="tli">Le calculateur de boîte de vitesses possède  2 connecteurs électriques : 
+<ul>
+<li>Connecteur 32 voies bleu </li>
+<li>Connecteur 48 voies vert</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">1.3. Affectation des voies du connecteur  : (48 voies vert)</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">N° de voie</td>
+<td colspan="1" rowspan="1">Description</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"> A1-B1</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C1</td>
+<td colspan="1" rowspan="1">Entrée  : Signal A1 , Sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D1-H1</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">J1</td>
+<td colspan="1" rowspan="1">Ligne dialogue : Réseau CAN H</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">K1</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L1</td>
+<td colspan="1" rowspan="1">+12 volts permanent</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">M1</td>
+<td colspan="1" rowspan="1">+12 volts permanent</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A2</td>
+<td colspan="1" rowspan="1">Information +APC</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B2</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C2</td>
+<td colspan="1" rowspan="1">Entrée  : Signal A2 , Sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D2-H2</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">J2</td>
+<td colspan="1" rowspan="1">Ligne dialogue : Réseau CAN L</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">K2-L2</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">M2</td>
+<td colspan="1" rowspan="1">+12 volts permanent</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B3</td>
+<td colspan="1" rowspan="1">Sortie  : Relais d’interdiction démarreur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C3-D3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">E3</td>
+<td colspan="1" rowspan="1">Entrée  : Information porte conducteur ouverte</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F3</td>
+<td colspan="1" rowspan="1">Entrée  : Contacteur de stop </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H3</td>
+<td colspan="1" rowspan="1">Entrée  : Signal A4 , Sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">J3</td>
+<td colspan="1" rowspan="1">Entrée  : Commande de vitesses au volant de direction gauche</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">K3</td>
+<td colspan="1" rowspan="1">Entrée  : Commande de vitesses au volant de direction droite</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L3</td>
+<td colspan="1" rowspan="1">Masse de puissance </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">M3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A4</td>
+<td colspan="1" rowspan="1">Entrée  : Information sélecteur de programme</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B4-C4</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D4</td>
+<td colspan="1" rowspan="1">Entrée  : +DEM</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">E4</td>
+<td colspan="1" rowspan="1">Entrée  : Signal A3 , Sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F4-G4</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H4</td>
+<td colspan="1" rowspan="1">Diagnostic ligne K</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">J4</td>
+<td colspan="1" rowspan="1">Masse  : Sélecteur de rapport</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">K4</td>
+<td colspan="1" rowspan="1">Masse  : Commande de vitesses au volant de direction</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">L4</td>
+<td colspan="1" rowspan="1">Masse de puissance </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">M4</td>
+<td colspan="1" rowspan="1">Masse de puissance </td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><div class="sti2">1.4. Affectation des voies du connecteur  : (32 voies bleu)</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">N° de voie</td>
+<td colspan="1" rowspan="1">Description</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"> A1</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de vitesse d’entrée boîte de vitesses (+)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B1</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de vitesse d’entrée boîte de vitesses (-)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C1-E1</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F1</td>
+<td colspan="1" rowspan="1">Masse  : Capteur actionneur d’embrayage - Actionneur de passage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G1</td>
+<td colspan="1" rowspan="1">Sortie  : Moteur de l’actionneur de passage (-)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H1</td>
+<td colspan="1" rowspan="1">Sortie  : Moteur de l’actionneur de passage (+)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A2-E2</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F2</td>
+<td colspan="1" rowspan="1">Masse  : Capteur actionneur de sélection</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G2</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H2</td>
+<td colspan="1" rowspan="1">Sortie  : Commande moteur embrayage (+)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B3</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur position moteur passage vitesses</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C3</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur position moteur embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">E3</td>
+<td colspan="1" rowspan="1">Alimentation +5 volts - Capteur de position actionneur d’embrayage - Actionneur de passage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F3-G3</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H3</td>
+<td colspan="1" rowspan="1">Sortie  : Commande moteur embrayage (-)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">A4</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de position actionneur d’embrayage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">B4</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de position actionneur de passage</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">C4</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de position actionneur de sélection</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">D4</td>
+<td colspan="1" rowspan="1">Entrée  : Capteur de position actionneur de sélection</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">E4</td>
+<td colspan="1" rowspan="1">Alimentation +5 volts - Capteur de position actionneur de sélection</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">F4</td>
+<td colspan="1" rowspan="1">(non utilisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">G4</td>
+<td colspan="1" rowspan="1">Sortie  : Commande moteur de l’actionneur de sélection (-)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">H4</td>
+<td colspan="1" rowspan="1">Sortie  : Commande moteur de l’actionneur de sélection (+)</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><div class="sti2">1.5. Implantation</div></div>
+<div id="b2cp3lmc_1_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/mc/b2cp/b2cp3lmc.avif" class="image" height="300" width="300" id="b2cp3lmc_1"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp3lmc</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/mc/b2cp/b2cp3lmc.avif" data-figure="1"><img id="b2cp3lmc_1_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">   (1660) Calculateur de boîte de vitesses.</div><div class="par">Le calculateur de boîte de vitesses est implanté sur le support de l’actionneur d’embrayage.</div><div class="cha1"><div class="sti1">2. Batterie   (BB00)</div></div>
+<div class="par">Le niveau de charge de la batterie est important pour le fonctionnement de la boîte de vitesses manuelle pilotée type  MA.</div><div class="tli">Le calculateur mémorise un défaut dans les cas suivants : 
+<ul>
+<li>Tension batterie supérieure à   16 volts</li>
+<li>Tension batterie inférieure à 8 volts</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">3. Relais d’interdiction démarreur (1005)</div></div>
+<div class="cha2"><div class="sti2">3.1. Rôle</div></div>
+<div class="par">Le relais d’interdiction démarreur permet au calculateur de boîte de vitesses d’interdire le fonctionnement du démarreur.</div><div class="tli">Le calculateur de boîte de vitesses commande le relais d’interdiction démarreur si les conditions suivantes sont réunies : 
+<ul>
+<li>Lorsque la clé de contact est en position +DEM</li>
+<li>La position des actionneurs permet le démarrage du moteur thermique</li>
+<li>Le conducteur appuie sur la pédale de frein</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">3.2. Particularités électriques</div></div>
+<div class="par">Commande  : Calculateur de boîte de vitesses.</div><div class="par">Type  : Commande "tout ou rien" par la masse.</div><div class="par">Connecteur  : 9 voies noir .</div><div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 2 : Sortie  : Alimentation démarreur</li>
+<li>Voie 4 : Alimentation +12 volts (BSM)</li>
+<li>Voie 5 : Alimentation +DEM</li>
+<li>Voie 9 : Masse  (calculateur de boîte de vitesses)</li>
+</ul>
+</div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : Les voies   1, 3, 6, 7 et 8 ne sont pas utilisées. </div></div>
+<div class="cha2"><div class="sti2">3.3. Implantation</div></div>
+<div class="par">Le relais d’interdiction démarreur est implanté à l’avant du passage de roue avant gauche  (derrière le projecteur gauche).</div><div class="cha1"><div class="sti1">4. Capteur de vitesse d’entrée boîte de vitesses (1662)</div></div>
+<div class="cha2"><div class="sti2">4.1. Rôle</div></div>
+<div class="par">Le capteur fournit, au calculateur de boîte de vitesses, la vitesse d’entrée de boîte de vitesses.</div><div class="tli">Cette information permet au calculateur de la boîte de vitesses : 
+<ul>
+<li>De déterminer le glissement de l’embrayage    (différence entre le régime moteur et la vitesse d’entrée)</li>
+<li>Déterminer le point de léchage de l’embrayage</li>
+<li>De piloter l’actionneur d’embrayage</li>
+<li>De contrôler la fin de synchronisation d’un rapport</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">4.2. Description</div></div>
+<div class="par">Le capteur est constitué d’un noyau magnétique et d’un bobinage.</div><div class="par">L’information fournie au calculateur de la boîte de vitesses est une tension alternative variant en fonction de la vitesse de rotation de l’arbre d’entrée boîte de vitesses.</div><div class="cha2"><div class="sti2">4.3. Particularités électriques</div></div>
+<div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 1 : Signal +</li>
+<li>Voie 2 : Signal -</li>
+</ul>
+</div>
+<div class="par">Résistance entre les voies   1 et 2 : 800 ohms (environ).</div><div class="par">Particularités des signaux émis   : Tension alternative à fréquence variable.</div><div class="rem"><div class="att"><span class="maj">ATTENTION</span> : Le fil du capteur n’est pas blindé, toujours faire cheminer le faisceaux à l’endroit prévu. </div></div>
+<div class="cha2"><div class="sti2">4.4. Implantation</div></div>
+<div class="par">Le capteur de vitesse d’entrée boîte de vitesses est situé face aux dents du pignon du deuxième rapport de l’arbre primaire.</div><div class="cha1"><div class="sti1">5. Actionneur d’embrayage    (1665)</div></div>
+<div class="cha2"><div class="sti2">5.1. Fonction </div></div>
+<div class="tli">L’actionneur d’embrayage permet : 
+<ul>
+<li>L’actionneur d’embrayage permet</li>
+<li>Le rattrapage d’usure de l’embrayage</li>
+</ul>
+</div>
+<div class="par">L’actionneur d’embrayage est piloté par le calculateur de boîte de vitesses par un étage de commande intégré au calculateur.</div><div class="tli">L’étage de commande du calculateur de boîte de vitesses permet : 
+<ul>
+<li>De commander le moteur électrique dans les deux sens de rotation</li>
+<li>De faire varier la vitesse de rotation du moteur électrique</li>
+<li>De mesurer le courant électrique absorbé par le moteur électrique</li>
+</ul>
+</div>
+<div class="tli">Deux capteurs de position intégrés au moteur électrique permettent au calculateur de boîte de vitesses : 
+<ul>
+<li>La mesure du déplacement de la fourchette d’embrayage</li>
+<li>La mesure de la vitesse de déplacement de la fourchette d’embrayage</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">5.2. Description</div></div>
+<div class="par">Se reporter à la gamme         : Principe de fonctionnement : Éléments mécaniques  , Boîte de vitesses manuelle pilotée type MA.</div><div class="cha2"><div class="sti2">5.3. Particularités électriques</div></div>
+<div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 1 : Masse des capteurs</li>
+<li>Voie 2 : Signal capteur 1</li>
+<li>Voie 3 : + Moteur électrique</li>
+<li>Voie 4 : Signal capteur 2</li>
+<li>Voie 5 : Alimentation +5 volts : Capteur </li>
+<li>Voie 6 : - Moteur électrique</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">5.4. Moteur électrique</div></div>
+<div class="tli">Particularités : 
+<ul>
+<li>Moteur à courant continu</li>
+<li>Commande  : Calculateur de boîte de vitesses</li>
+<li>Commande à tension variable (RCO)</li>
+<li>Résistance entre les voies 3 et 6 (moteur électrique) : 2 ohms (environ)</li>
+</ul>
+</div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : RCO : rapport cyclique d’ouverture. </div></div>
+<div class="cha2"><div class="sti2">5.5. Capteur de position</div></div>
+<div class="par">Le moteur électrique de l’actionneur d’embrayage contient deux capteurs de position sans contact    (capteur "à effet Hall").</div><div class="tli">Deux capteurs de position intégrés au moteur électrique permettent au calculateur de boîte de vitesses : 
+<ul>
+<li>La mesure du déplacement de la fourchette d’embrayage</li>
+<li>La mesure de la vitesse de déplacement de la fourchette d’embrayage</li>
+</ul>
+</div>
+<div class="tli">Particularités : 
+<ul>
+<li>Alimentation  : Calculateur de boîte de vitesses (5 volts)</li>
+<li>Les capteurs fournissent un signal carré au calculateur de boîte de vitesses</li>
+</ul>
+</div>
+<div class="tli">Particularités des signaux émis : 
+<ul>
+<li>Les créneaux de tension sont compris entre   0 et 5 volts</li>
+<li>Les capteurs fournissent 60 tops par tour de rotation du moteur électrique</li>
+<li>La fréquence des signaux varie avec le régime de rotation du moteur électrique</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">6. Actionneur de boîte de vitesses (1663, 1664)</div></div>
+<div class="cha2"><div class="sti2">6.1. Rôle</div></div>
+<div class="par">L’actionneur de boîte de vitesses engage chaque rapport par des mouvements de translation et de rotation du levier de passage de vitesses.</div><div class="par">Les actionneurs de passage et de sélection sont intégrés dans l’actionneur de boîte de vitesses    (indémontable).</div><div class="tli">Numéro de pièce dans les schémas électriques : 
+<ul>
+<li>Actionneur de passage   : 1663</li>
+<li>Actionneur de sélection : 1664</li>
+</ul>
+</div>
+<div class="tli">Pour effectuer les mouvements nécessaires l’actionneur de boîte de vitesses intègre : 
+<ul>
+<li>Deux moteurs électriques à capteurs de position intégrés</li>
+<li>D’un système de démultiplication d’effort et des renvois</li>
+<li>Un système de rampe, permettant de sélectionner et d’engager un rapport simultanément   (gain de vitesse)</li>
+</ul>
+</div>
+<div class="par">Chaque actionneur est piloté par le calculateur de boîte de vitesses par un étage de commande intégré au calculateur.</div><div class="tli">L’étage de commande du calculateur de boîte de vitesses permet : 
+<ul>
+<li>De commander le moteur électrique dans les deux sens de rotation</li>
+<li>De faire varier la vitesse de rotation du moteur électrique</li>
+<li>De mesurer le courant électrique absorbé par le moteur électrique</li>
+</ul>
+</div>
+<div class="tli">Deux capteurs de position intégrés au moteur électrique permettent au calculateur de boîte de vitesses : 
+<ul>
+<li>La mesure du déplacement du levier de passage des rapports       (sur boîte de vitesses)</li>
+<li>La mesure de la vitesse de déplacement du levier de passage des rapports (sur boîte de vitesses)</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">6.2. Description</div></div>
+<div class="par">Se reporter à la gamme  : Principe de fonctionnement - Éléments mécaniques  , Boîte de vitesses manuelle pilotée type MA.</div><div class="cha2"><div class="sti2">6.3. Particularités électriques</div></div>
+<div id="b2cp3lnc_2_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/nc/b2cp/b2cp3lnc.avif" class="image" height="300" width="300" id="b2cp3lnc_2"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp3lnc</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/nc/b2cp/b2cp3lnc.avif" data-figure="1"><img id="b2cp3lnc_2_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">   (1) Connecteur électrique du moteur de passage.</div><div class="par">  (2) Connecteur électrique du moteur de sélection.</div><div class="tli">Affectation des voies du connecteur  : Moteur de passage (1) : 
+<ul>
+<li>Voie 1 : + Moteur électrique</li>
+<li>Voie 2 : +5V : Capteur </li>
+<li>Voie 3 : Signal capteur 1</li>
+<li>Voie 4 : Masse des capteurs</li>
+<li>Voie 5 : Signal capteur 2</li>
+<li>Voie 6 : - Moteur électrique</li>
+</ul>
+</div>
+<div class="tli">Affectation des voies du connecteur  : Moteur de sélection (2) : 
+<ul>
+<li>Voie 1 : Masse des capteurs</li>
+<li>Voie 2 : Signal capteur 1</li>
+<li>Voie 3 : + Moteur électrique</li>
+<li>Voie 4 : Signal capteur 2</li>
+<li>Voie 5 : +5V : Capteur </li>
+<li>Voie 6 : - Moteur électrique</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">6.4. Moteur électrique</div></div>
+<div class="tli">Particularités : 
+<ul>
+<li>Moteur à courant continu</li>
+<li>Commande  : Calculateur de boîte de vitesses</li>
+<li>Commande à tension variable (RCO)</li>
+</ul>
+</div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : RCO : rapport cyclique d’ouverture. </div></div>
+<div class="par">Résistance des moteurs électriques     : 2 ohms (environ).</div><div class="cha2"><div class="sti2">6.5. Capteur de position</div></div>
+<div class="tli">Deux capteurs de position intégrés au moteur électrique permettent au calculateur de boîte de vitesses : 
+<ul>
+<li>La mesure du déplacement du levier de passage des rapports  (sur boîte de vitesses)</li>
+<li>La mesure de la vitesse de déplacement du levier de passage des rapports</li>
+</ul>
+</div>
+<div class="tli">Particularités : 
+<ul>
+<li>Alimentation  : Calculateur de boîte de vitesses (5 volts)</li>
+<li>Les capteurs fournissent un signal carré au calculateur de boîte de vitesses</li>
+</ul>
+</div>
+<div class="tli">Particularités des signaux émis : 
+<ul>
+<li>Les créneaux de tension sont compris entre   0 et 5 volts</li>
+<li>Les capteurs fournissent 60 tops par tour de rotation du moteur électrique</li>
+<li>La fréquence des signaux varie avec le régime de rotation du moteur électrique</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">7. Sélecteur de rapport (1661)</div></div>
+<div class="cha2"><div class="sti2">7.1. Rôle</div></div>
+<div class="par">Le calculateur de boîte de vitesses est informé de la position du sélecteur de rapport par  4 informations filaires.</div><div class="cha2"><div class="sti2">7.2. Particularités électriques</div></div>
+<div id="d3ap020c_3_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/0c/d3ap/d3ap020c.avif" class="image" height="300" width="300" id="d3ap020c_3"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d3ap020c</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/0c/d3ap/d3ap020c.avif" data-figure="1"><img id="d3ap020c_3_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">   (1661) Sélecteur de rapport.</div><div class="par">  (1660) Calculateur de boîte de vitesses.</div><div class="par">Alimentation  : Calculateur de boîte de vitesses.</div><div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 1 : Signal A1</li>
+<li>Voie 2 : Non connecté</li>
+<li>Voie 3 : Masse </li>
+<li>Voie 4 : Signal A2</li>
+<li>Voie 5 : Signal A4</li>
+<li>Voie 6 : Signal A3</li>
+</ul>
+</div>
+<div class="par">Le calculateur contrôle la validité des informations reçues par cohérence entre les signaux   (diagnostic).</div><div class="par">Chaque position du sélecteur de rapport modifie l’état d’un ou plusieurs signaux.</div><div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Position du sélecteur de rapport</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie     1 (Tension maxi/tension mini)</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie 4 (Tension maxi/tension mini)</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie 6 (Tension maxi/tension mini)</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie 5 (Tension maxi/tension mini)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Centrale</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">+</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">-</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">N</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">R</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+</tr></tbody></table>
+</div>
+<div class="cha1"><div class="sti1">8. Commandes de vitesses au volant de direction (1666)</div></div>
+<div class="cha2"><div class="sti2">8.1. Rôle</div></div>
+<div class="par">Le calculateur de boîte de vitesses est informé de la position des commandes de vitesses au volant de direction par  2 informations filaires.</div><div class="cha2"><div class="sti2">8.2. Description</div></div>
+<div id="d4ap041d_4_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/1d/d4ap/d4ap041d.avif" class="image" height="360" width="615" id="d4ap041d_4"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">d4ap041d</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/1d/d4ap/d4ap041d.avif" data-figure="1"><img id="d4ap041d_4_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">   (3) Connecteur électrique , Commandes de vitesses au volant de direction.</div><div class="cha2"><div class="sti2">8.3. Particularités électriques</div></div>
+<div class="par">Alimentation  : Calculateur de boîte de vitesses.</div><div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 1 : Signal  , Commande de vitesses au volant de direction gauche (-)</li>
+<li>Voie 2 : Signal  , Commande de vitesses au volant de direction droite (+)</li>
+<li>Voie 4 : Masse </li>
+</ul>
+</div>
+<div class="par">Le calculateur contrôle la validité des informations reçues par cohérence entre les signaux   (diagnostic).</div><div class="par">Chaque action sur les commandes de vitesses au volant de direction modifie l’état d’un ou plusieurs signaux.</div><div class="tableau">
+<table class="tableauAC">
+<tbody><tr valign="top"><td colspan="1" rowspan="1">Position du sélecteur de rapport</td>
+<td colspan="1" rowspan="1">Position du sélecteur de rapport</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie     2 (Tension maxi/tension mini)</td>
+<td colspan="1" rowspan="1">Tension entre masse et voie 1 (Tension maxi/tension mini)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Commande + relâchée</td>
+<td colspan="1" rowspan="1">Commande - relâchée</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Commande + activée</td>
+<td colspan="1" rowspan="1">Commande - activée</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Commande - activée</td>
+<td colspan="1" rowspan="1">Commande - relâchée</td>
+<td colspan="1" rowspan="1">2,4V/0,6V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Commande - activée</td>
+<td colspan="1" rowspan="1">Commande - activée</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+<td colspan="1" rowspan="1">4,1V/2,4V</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><div class="sti2">8.4. Implantation</div></div>
+<div class="par">Les commandes de vitesses au volant de direction sont implantées sur le module de commutation sous volant de direction.</div><div class="cha1"><div class="sti1">9. Sélecteur de programme  (1670)</div></div>
+<div class="cha2"><div class="sti2">9.1. Rôle</div></div>
+<div class="par">Cette information indique le choix du conducteur au calculateur de la boîte de vitesses.</div><div class="rem"><div class="not"><span class="maj">NOTA</span> : À la mise du contact la boîte de vitesses se place systématiquement en programme "automatique". </div></div>
+<div class="par">Le sélecteur de programme est à commande impulsionnelle.</div><div class="cha2"><div class="sti2">9.2. Description</div></div>
+<div id="b2cp3lpc_5_div"><div class="legende"></div><table class="imgTable"><tbody><tr><td class="imgTable" colspan="2"><div><img src="img/AC/img/inf_inc/pc/b2cp/b2cp3lpc.avif" class="image" height="300" width="300" id="b2cp3lpc_5"></div></td></tr><tr><td class="imgTable"><span class="fig">Figure : <span class="img_numfich">b2cp3lpc</span></span></td><td align="right" class="imgTable"><span class="imgNavbar"><a href="img/AC/img/inf_inc/pc/b2cp/b2cp3lpc.avif" data-figure="1"><img id="b2cp3lpc_5_FullScreen" border="0" width="20" height="20" alt="Afficher l'image en plein écran" src="img/images/Document/fullscreen.avif"></a></span></td></tr></tbody></table></div><div class="par">        (1670) Sélecteur de programme.</div><div class="par">"  a" Voyant auto.</div><div class="cha2"><div class="sti2">9.3. Particularités électriques</div></div>
+<div class="tli">Affectation des voies du connecteur  : 
+<ul>
+<li>Voie 1 : Alimentation +12 volts : Éclairage sélecteur de programme (BSI)</li>
+<li>Voie 2 : Alimentation +12 volts : Indicateur "auto" (BSI)</li>
+<li>Voie 3 : (non utilisée)</li>
+<li>Voie 4 : Signal  (vers calculateur de boîte de vitesses)</li>
+<li>Voie 5 : Masse </li>
+<li>Voie 6 : (non utilisée)</li>
+</ul>
+</div>
+<div class="par">Le choix du programme est effectué par une information "masse" (0V) sur la ligne de commande correspondante   (impulsionnel).</div><div class="par">La mise à la masse de la ligne de commande ne dure que le temps de l’appui sur le bouton correspondant.</div><div class="tli">Le boîtier de servitude intelligent commande : 
+<ul>
+<li>L’allumage du voyant "auto" en "    a" dés l’appui sur le sélecteur de programme (1670)</li>
+<li>L’éclairage du sélecteur de programme + (feux de position)</li>
+</ul>
+</div>
+<div class="cha2"><div class="sti2">9.4. Implantation</div></div>
+<div class="par">Le sélecteur de programme est implanté sur l’enjoliveur du sélecteur de rapport.</div><div class="cha1"><div class="sti1">10. Information porte conducteur ouverte</div></div>
+<div class="par">Cette information est fournie par le boîtier de servitude intelligent.</div><div class="tli">Cette information permet : 
+<ul>
+<li>Le réveil du calculateur de boîte de vitesses à la décondamnation des ouvrants ou de l’ouverture de la porte conducteur</li>
+<li>L’engagement du rapport "    N" dés l’ouverture de la porte conducteur (sécurité)</li>
+</ul>
+</div>
+<div class="cha1"><div class="sti1">11. Contacteur antivol (CA00)</div></div>
+<div class="tli">Le calculateur antivol permet de transmettre les informations suivantes au calculateur de boîte de vitesses : 
+<ul>
+<li>Contacteur antivol position accessoires  (+APC)</li>
+<li>Contacteur antivol positions démarrage (+DEM)</li>
+</ul>
+</div>
+<div class="par">L’information   +APC permet de réveiller le calculateur de boîte de vitesses.</div><div class="par">L’information   +DEM permet d’informer le calculateur de boîte de vitesses du démarrage du moteur.</div><div class="cha1"><div class="sti1">12. Contacteur de stop  (2100)</div></div>
+<div class="cha2"><div class="sti2">12.1. Rôle</div></div>
+<div class="tli">Le contacteur de stop permet : 
+<ul>
+<li>Le fonctionnement de la fonction de sécurité de démarrage du moteur thermique  : Le démarrage du moteur thermique est autorisé en appuyant sur la pédale de frein</li>
+<li>De forcer le rétrogradage lors d’une action sur la pédale de frein</li>
+<li>De réduire l’entraînement de la transmission à l’arrêt (consigne de ralenti)</li>
+</ul>
+</div>
+<div class="par">Le contacteur de stop à fermeture est relié directement au calculateur de boîte de vitesses   (liaison filaire).</div><div class="par">Le boîtier de servitude intelligent acquiert l’information du deuxième contacteur de stop et envoie l’information au calculateur de boîte de vitesses par le réseau CAN.</div><div class="par">Le calculateur de boîte de vitesses compare les deux informations.</div><div class="cha2"><div class="sti2">12.2. Particularités électriques</div></div>
+<div class="par">Contacteur de stop à fermeture     .  couleur : Rouge .</div><div class="par">Le contacteur de stop est un contact "tout ou rien"   (mise à la masse de l’entrée du calculateur).</div><div class="cha2"><div class="sti2">12.3. Implantation</div></div>
+<div class="par">Le contacteur de stop est implanté sur le pédalier.</div></div>

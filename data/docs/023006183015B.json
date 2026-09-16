@@ -1,0 +1,18 @@
+{
+ "ref": "023006183015B",
+ "refDisplay": "0230 06 183015B",
+ "title": "COLLECTEUR CATALYSEUR ECHAPP AV",
+ "nature": "",
+ "applicability": " DEPUIS DAM 1010182 OU  DEPUIS DAM 10101CA",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0011"
+  }
+ ]
+}

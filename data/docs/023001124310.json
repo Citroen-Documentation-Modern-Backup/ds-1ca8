@@ -1,0 +1,18 @@
+{
+ "ref": "023001124310",
+ "refDisplay": "0230 01 124310",
+ "title": "SOUPAPES GUIDES CULBUTEURS",
+ "nature": "",
+ "applicability": " SAUF TOUT ALCOOL OU ESSENCE RON 95 (FLEX FUEL)",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6S",
+   "fctId": "FCT0006"
+  }
+ ]
+}

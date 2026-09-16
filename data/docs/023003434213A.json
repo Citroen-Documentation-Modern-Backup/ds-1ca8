@@ -1,0 +1,18 @@
+{
+ "ref": "023003434213A",
+ "refDisplay": "0230 03 434213A",
+ "title": "BARRES TORSION AVANT RESSORT",
+ "nature": "",
+ "applicability": "SUSPENSION AR RENFORCEE",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0027"
+  }
+ ]
+}

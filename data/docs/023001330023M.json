@@ -1,0 +1,23 @@
+{
+ "ref": "023001330023M",
+ "refDisplay": "0230 01 330023M",
+ "title": "BOITE DE VITESSES MECANIQUE",
+ "nature": "",
+ "applicability": "BVM MA PILOTEE ET DIFFERENTIEL 77 DEPUIS OPR 11193",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7P",
+   "fctId": "FCT0017"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0017"
+  }
+ ]
+}

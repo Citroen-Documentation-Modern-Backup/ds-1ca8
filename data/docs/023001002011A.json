@@ -1,0 +1,23 @@
+{
+ "ref": "023001002011A",
+ "refDisplay": "0230 01 002011A",
+ "title": "ENSEMBLE MOTEUR",
+ "nature": "",
+ "applicability": "TOUT ALCOOL OU ESSENCE RON 95 (FLEX FUEL)",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F6Q",
+   "fctId": "FCT0049"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F6Q",
+   "fctId": "FCT0049"
+  }
+ ]
+}

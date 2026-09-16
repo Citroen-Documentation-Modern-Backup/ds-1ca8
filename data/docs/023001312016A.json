@@ -1,0 +1,23 @@
+{
+ "ref": "023001312016A",
+ "refDisplay": "0230 01 312016A",
+ "title": "EMBRAYAGE - MECANISME - DISQUE - BUTEE",
+ "nature": "",
+ "applicability": "BVM MA PILOTEE DEPUIS OPR 10193 OU BVM MA DEPUIS OPR 10193",
+ "typDoc": "1",
+ "css": [
+  "css/Document/pr.css"
+ ],
+ "usedBy": [
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DA5&B0F=B0F7P",
+   "fctId": "FCT0016"
+  },
+  {
+   "ldp": "1CA8",
+   "variantKey": "B0D=B0DAD&B0F=B0F7P",
+   "fctId": "FCT0016"
+  }
+ ]
+}

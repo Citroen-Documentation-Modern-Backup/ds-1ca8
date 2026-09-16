@@ -1,0 +1,737 @@
+<div id="title" class="section_titre"><table class="refDoc"><tbody><tr><td colspan="2" class="references">D6AM0120P0</td><td class="title">Télécodage : Boîtier de servitude intelligent </td></tr></tbody></table></div><div id="appl" class="section_appl"></div><div class="section_corps" id="content"><div class="cha1"><a name="LABEL1"></a><div class="sti1">1. Véhicule concerné</div></div>
+<div class="part"><div class="clsBookExpanded" child="0" id="obook0"> <img class="book" src="img/images/Document/obook.avif"></div>
+<div class="clsBookCollapsed" child="0" id="cbook0"> <img class="book" src="img/images/Document/cbook.avif"></div>
+<div class="applMicro"></div>
+<div class="clsExpanded" id="0">
+<div class="par">Citroën C3.</div><div class="par">À partir du CD de diagnostic N° 26.</div></div>
+</div>
+<div class="cha1"><a name="LABEL36"></a><div class="sti1">2. Sommaire</div></div>
+<div class="par"><a href="#LABEL16" class="lienHyperTexte">Consignes de sécurité</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> .</div><div class="par"><a href="#LABEL4" class="lienHyperTexte">Opérations préliminaires</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> .</div><div class="par"><a href="#LABEL35" class="lienHyperTexte">Télécodage</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> .</div><div class="tli"><a href="#LABEL18" class="lienHyperTexte">Tableaux de télécodage</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5">  : 
+<ul>
+<li><a href="#LABEL52" class="lienHyperTexte">Option client</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> </li>
+<li><a href="#LABEL53" class="lienHyperTexte">Configuration </a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> </li>
+<li><a href="#LABEL56" class="lienHyperTexte">Calculateurs présents</a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> </li>
+<li><a href="#LABEL55" class="lienHyperTexte">Code VIN </a> <img src="img/images/Document/info.avif" align="bottom" border="0" hspan="5"> </li>
+</ul>
+</div>
+<div class="cha1"><a name="LABEL16"></a><div class="sti1">3. Consignes de sécurité</div></div>
+<div class="par">L’opération de télécodage est une opération sensible qui a des conséquences directes sur le bon fonctionnement du véhicule.</div><div class="tli">Un mauvais télécodage peut avoir des impacts sur : 
+<ul>
+<li>La sécurité (Désactivation des dispositifs de protection du véhicule)</li>
+<li>Le fonctionnement global du véhicule (Dégradation ou perte complète des fonctions du véhicule)</li>
+<li>Le diagnostic du véhicule (Remontée de code défauts pouvant mettre en échec les méthodes de diagnostic de l’outil et conduire à des remplacements de pièces injustifiées)</li>
+</ul>
+</div>
+<div class="tli">Avant toute tentative de démarrage du moteur : 
+<ul>
+<li>Contrôler que le frein de stationnement est activé</li>
+<li>En présence d’une boîte de vitesses automatique, contrôler que le levier de vitesses est en position "P" (Park)</li>
+<li>En présence d’une boîte de vitesses manuelle, contrôler que le levier de vitesses est au point mort</li>
+</ul>
+</div>
+<div class="cha1"><a name="LABEL4"></a><div class="sti1">4. Opérations préliminaires</div></div>
+<div class="tli">Avant toute intervention : 
+<ul>
+<li>Établir la communication avec le calculateur, à l’aide de l’outil de diagnostic</li>
+<li>Imprimer l’ensemble des écrans de l’outil de diagnostic indiquant les valeurs des paramètres de télécodage, ou noter ces valeurs manuellement</li>
+</ul>
+</div>
+<div class="cha1"><a name="LABEL35"></a><div class="sti1">5. Télécodage</div></div>
+<div class="tli">En cas de télécodage du calculateur : 
+<ul>
+<li>Établir la communication avec le calculateur</li>
+<li>Effectuer le télécodage par internet</li>
+<li>Vérifier le télécodage</li>
+</ul>
+</div>
+<div class="tli">En cas de remplacement d’un calculateur : 
+<ul>
+<li>Monter le calculateur neuf</li>
+<li>Établir la communication avec le calculateur</li>
+<li>Effectuer le télécodage par internet</li>
+<li>Vérifier le télécodage</li>
+<li>Effectuer les opérations d’apprentissage (Si nécessaire)</li>
+</ul>
+</div>
+<div class="tli">Après toute intervention : 
+<ul>
+<li>Télécodage manuel des options clients (À partir des impressions d’écran ou des notes réalisées précédemment)</li>
+<li>Contrôle de certains paramètres en télécodage manuel (Se reporter aux tableaux de télécodage)</li>
+</ul>
+</div>
+<div class="par">Procédure à effectuer après le télécodage.</div><div class="tli">Opérations à effectuer en cas d’échange ou de téléchargement du boîtier de servitude intelligent uniquement : 
+<ul>
+<li>Si le boîtier de servitude intelligent a été remplacé : Effectuer l’apprentissage sur le véhicule ("Initialisation BSI")</li>
+<li>Si le boîtier de servitude intelligent a été téléchargé : Effectuer un apprentissage ("initialisation BSI"), ou un apprentissage des clés, ou seulement une synchronisation des télécommandes hautes fréquences</li>
+</ul>
+</div>
+<div class="rem"><div class="att"><span class="maj">ATTENTION</span> : Pour réaliser les opérations d’apprentissage, le code confidentiel et toutes les clés du véhicule sont nécessaires. </div></div>
+<div class="tli">Après avoir effectué les apprentissages, contrôler les paramètres suivants : 
+<ul>
+<li>Le paramètre "BSI appairé au calculateur contrôle moteur" doit être à la valeur "Oui"</li>
+<li>Le paramètre "calculateur contrôle moteur verrouillé" doit être à la valeur "Non"</li>
+<li>Le paramètre "nombre de clés apprises" doit être à la valeur "xx" (nombre total des clés du véhicule)</li>
+</ul>
+</div>
+<div class="par">Pour chaque clé, le paramètre "étiquette transpondeuse reconnue" doit être à la valeur "Oui".</div><div class="cha1"><a name="LABEL18"></a><div class="sti1">6. Tableaux de télécodage</div></div>
+<div class="rem"><div class="att"><span class="maj">ATTENTION</span> : L’affichage des paramètres de télécodage est conditionné par leur présence dans le logiciel du boîtier de servitude intelligent. Les paramètres seront affichés par l’outil de diagnostic partiellement ou en totalité selon la version du logiciel du boîtier de servitude intelligent. </div></div>
+<div class="tli">Après avoir sélectionné le menu "télécodage manuel", les menus suivants sont disponibles : 
+<ul>
+<li>Options client</li>
+<li>Configuration </li>
+<li>Calculateurs présents</li>
+<li>Code VIN </li>
+</ul>
+</div>
+<div class="rem"><div class="not"><span class="maj">NOTA</span> : Les paramètres du menu "options client" sont aussi présents dans le menu configuration, il n’est donc pas nécessaire de télécoder ceux-ci lorsque le télécodage des paramètres du menu "configuration" a été ou va être effectué. </div></div>
+<div class="cha2"><a name="LABEL52"></a><div class="sti2">6.1. Options client</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="4">Option client</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+<td colspan="1" rowspan="1">Définition du véhicule</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Option alarme</td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une alarme multiplexée</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé d’une alarme multiplexée</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Toit escamotable</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Télécoder toujours "non"</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL53"></a><div class="sti2">6.2. Configuration </div></div>
+<div class="part"><div class="clsBookExpanded" child="2" id="obook2"> <img class="book" src="img/images/Document/obook.avif"></div>
+<div class="clsBookCollapsed" child="2" id="cbook2"> <img class="book" src="img/images/Document/cbook.avif"></div>
+<div class="applMicro"></div>
+<div class="clsExpanded" id="2">
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="4">Configuration </th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+<td colspan="1" rowspan="1">Définition du véhicule</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option verrouillage en roulant</td>
+<td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Pour tous les véhicules (Sauf véhicules des pays du Mercosur équipés de la condamnation centralisée)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="4"></td>
+<td colspan="1" rowspan="2">Réfrigération simple (RF) avec recyclage d’air automatique</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une réfrigération à régulation automatique (RFTA) ou si le véhicule est équipé d’une réfrigération simple sans recyclage d’air automatique (ne concerne que des véhicules essence)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une réfrigération simple avec recyclage d’air automatique (concerne les véhicules diesel et certains véhicules essence)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2">Réfrigération semi-régulée (Recyclage)</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une réfrigération à régulation automatique (RFTA) ou si le véhicule est équipé d’une réfrigération simple sans recyclage d’air automatique (ne concerne que des véhicules essence)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une réfrigération simple avec recyclage d’air automatique (concerne les véhicules diesel et certains véhicules essence)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Véhicule 3 portes</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Télécoder toujours "non"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Option coussin gonflable passager</td>
+<td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de coussin gonflable côté passager</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de coussin gonflable côté passager</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Logique lève-vitre Mercosur</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de lève-vitres arrière à commande électrique séquentielle ou si le véhicule n’est pas pour les pays du Mercosur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé de lève-vitres arrière à commande électrique séquentielle ou si le véhicule est pour les pays du Mercosur</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Lève-vitres arrières électriques</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé de lève-vitres arrière manuels</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé de lève-vitres arrière électrique</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Lève-vitres arrière</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé de lève-vitres arrière manuels</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé de lève-vitres arrière électrique</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"> feux antibrouillard arrière</td>
+<td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Télécoder toujours "OUI"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option lunette arrière ouvrante</td>
+<td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Télécoder toujours "absent"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence toit ouvrant</td>
+<td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Télécoder toujours "absent"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Lève-vitres avant électrique avec antipincement</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de lève-vitres électrique avec commande séquentielle</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de lève-vitres électrique avec commande séquentielle</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Lève-vitres avant (Antipincement)</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de lève-vitres électrique avec commande séquentielle</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé de lève-vitres électrique avec commande séquentielle</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Affichage des informations de l’ordinateur de bord sur le combiné</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’un afficheur multifonction de type B ou C</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé d’un afficheur multifonction (montre) ou s’il est équipé d’un afficheur multifonction de type A</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Allumage témoin de non-bouclage de la ceinture de sécurité</td>
+<td colspan="1" rowspan="1">Non</td>
+<td colspan="1" rowspan="1">Si le véhicule circule en dehors de l’Europe</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Oui</td>
+<td colspan="1" rowspan="1">Si le véhicule circule en Europe</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Capacité du réservoir</td>
+<td colspan="1" rowspan="1">45</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une motorisation essence</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">46</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une motorisation diesel</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Résistance vide</td>
+<td colspan="1" rowspan="1">350</td>
+<td colspan="1" rowspan="1">Tous types </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Résistance_plein</td>
+<td colspan="1" rowspan="1">50</td>
+<td colspan="1" rowspan="1">Tous types </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Mode inviolabilité</td>
+<td colspan="1" rowspan="1">Actif</td>
+<td colspan="1" rowspan="1">Tous types </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Mode usine</td>
+<td colspan="1" rowspan="1">Inactif</td>
+<td colspan="1" rowspan="1">Tous types </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Seuil de maintenance (marketing)</td>
+<td colspan="1" rowspan="1">En km</td>
+<td colspan="1" rowspan="1">Le télécodage du "seuil de maintenance" s’effectue automatiquement dans le menu "préparation des véhicules neufs" (PVN)</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Activation forçage mode client</td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Télécoder toujours "présent"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Seuil vitesse pour le forçage mode client</td>
+<td colspan="1" rowspan="1">30</td>
+<td colspan="1" rowspan="1">Télécoder à "30 km/h" le seuil de vitesse pour le forçage en mode client</td>
+</tr></tbody></table>
+</div>
+</div>
+</div>
+<div class="cha2"><a name="LABEL56"></a><div class="sti2">6.3. Calculateurs présents</div></div>
+<div class="part"><div class="clsBookExpanded" child="4" id="obook4"> <img class="book" src="img/images/Document/obook.avif"></div>
+<div class="clsBookCollapsed" child="4" id="cbook4"> <img class="book" src="img/images/Document/cbook.avif"></div>
+<div class="applMicro"></div>
+<div class="clsExpanded" id="4">
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="4">Calculateurs présents</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+<td colspan="1" rowspan="1">Définition du véhicule</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">BSI </td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Tous types </td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Toit escamotable</td>
+<td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Télécoder "absent"</td>
+</tr></tbody></table>
+</div>
+</div>
+</div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="4">Calculateurs présents (Selon équipement)</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+<td colspan="1" rowspan="1">Définition du véhicule</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Autoradio </td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’un autoradio (Type RB3 ou RD3). S’assurer que le paramètre "afficheur/télématique" est télécodé "présent"</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Si le véhicule n’est équipé d’autoradio de type RB3 ou RD3</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Changeur CD Audio</td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’un chargeur CD multiplexé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé d’un chargeur CD multiplexé</td>
+</tr><tr valign="top"><td colspan="1" rowspan="2"></td>
+<td colspan="1" rowspan="2">Alarme </td>
+<td colspan="1" rowspan="1">Présent</td>
+<td colspan="1" rowspan="1">Si le véhicule est équipé d’une alarme multiplexée</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1">Absent </td>
+<td colspan="1" rowspan="1">Si le véhicule n’est pas équipé d’une alarme multiplexée</td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL55"></a><div class="sti2">6.4. Code VIN </div></div>
+<div class="par">Renseigner le code VIN du véhicule (17 caractères).</div><div class="cha1"><a name="LABEL51"></a><div class="sti1">7. Version vierge imprimable</div></div>
+<div class="cha2"><a name="LABEL47"></a><div class="sti2">7.1. Options client</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Options client</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option alarme</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur de luminosité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur de pluie</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option allumage (automatique) des feux de détresse en cas de choc</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option allumage des feux de détresse sur forte décélération</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option véhicule auto-école</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence projecteurs de brouillard avant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Fermeture centralisée à la télécommande (Haute fréquence)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option aide au stationnement</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option témoin de non-bouclage de la ceinture de sécurité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option témoin sécurité enfant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option alarme Belge</td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL45"></a><div class="sti2">7.2. Configuration </div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Configuration </th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option alarme</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option boîte de vitesses automatique</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur de luminosité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur de pluie</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence climatisation </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option verrouillage en roulant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option direction à droite</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option essuyage lunette</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option lave-projecteurs</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Localisation véhicule aux clignotants</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Type de carburant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Version Japon</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option allumage automatique des feux de détresse en cas de choc</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option contrôle dynamique de stabilité (ESP)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence de filtre à particules</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option allumage des feux de détresse sur forte décélération</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence résistance chauffante (HDI)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option véhicule auto-école</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Véhicule 3 portes</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Type de climatisation </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option feux de croisement et de route dans le même optique</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence projecteurs antibrouillard avant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur de température d’huile</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option capteur niveau eau</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option coussin gonflable passager</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option Alerte Survitesse réglable</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1"> feux diurnes</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Fermeture centralisée à la télécommande (Haute fréquence)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option aide au stationnement</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence télématique (RT3)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Type de verrouillage </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Lève-vitre arrière ( électrique)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Deux lève-vitres avant électriques </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence de la sonde d’eau dans le gazole</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option entrée contact embrayage</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence pompe à air</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option témoin de non-bouclage de la ceinture de sécurité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option lunette arrière ouvrante</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option sécurité enfant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Référence du pare-brise</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option alarme Belge</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option antiblocage de roues (ABS) multiplexé</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option régulation de vitesse</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option écran multifonction</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence éssuyage vitre arrière en marche arrière </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence boîte de vitesses manuelle pilotée</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence sonde de température extérieure</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Type d’émetteur de télécommande haute fréquence</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence toit ouvrant</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Recondamnation automatique</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Serrure porte passager</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Allumage des feux de détresse lors d’un appui sur le bouton appel d’urgence</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Présence feux antibrouillards arrières</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Option grand froid</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Lève-vitres avant électrique avec anti-pincement</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Affichage des informations de l’ordinateur de bord sur le combiné</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Allumage témoin de non-bouclage de la ceinture de sécurité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Capacité du réservoir</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Loi de jauge - Niveau d’alerte</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Durée totale avant maintenance (seuil)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Tours avant maintenance (seuil)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Seuil maintenance (Marketing)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Mode usine</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Temporisation d’activation du mode économie</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Mode inviolabilité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Activation forçage mode client</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Seuil vitesse pour le forçage mode client</td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL48"></a><div class="sti2">7.3. Loi de jaugeage statique</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Loi de jaugeage statique</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à résistance_plein</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 60 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 80 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 100 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 120 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 140 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 160 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 180 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 200 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 220 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 240 Ohms</td>
+<td colspan="1" rowspan="2"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 260 Ohms</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 280 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 300 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à résistance_vide</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant correspondant à 320 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL49"></a><div class="sti2">7.4. Loi de jaugeage dynamique</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Loi de jaugeage dynamique</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à résistance_plein</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 60 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 80 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 100 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 120 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 140 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 160 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 180 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 200 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 220 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 240 Ohms</td>
+<td colspan="1" rowspan="2"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 260 Ohms</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 280 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 300 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à résistance_vide</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Niveau de carburant dynamique correspondant à 320 Ohms</td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL50"></a><div class="sti2">7.5. Calculateurs présents</div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Calculateurs présents</th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Afficheur / télématique</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Coussin gonflable  (Airbag)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Haute fréquence Japon</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Navigation</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Module de commutation sous volant de direction</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Module auto-école</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Autoradio </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Capteur de pluie / luminosité</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Alarme </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Climatisation </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Module additivation gazole</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Aide au stationnement</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Changeur CD Audio</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Toit escamotable</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Combiné </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Calculateur contrôle moteur </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Boîte de vitesses automatique /Calculateur boîte de vitesses manuelle pilotée</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Antiblocage de roues (ABS)/Contrôle dynamique de stabilité (ESP)</td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">BSI </td>
+<td colspan="1" rowspan="1"></td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Direction assistée électrique</td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+<div class="cha2"><a name="LABEL46"></a><div class="sti2">7.6. Code VIN </div></div>
+<div class="tableau">
+<table class="tableauAC">
+<thead><tr><th class="tete" colspan="3">Code VIN </th></tr></thead>
+<tbody><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Paramètres de télécodage</td>
+<td colspan="1" rowspan="1">Valeurs à télécoder</td>
+</tr><tr valign="top"><td colspan="1" rowspan="1"></td>
+<td colspan="1" rowspan="1">Code VIN </td>
+<td colspan="1" rowspan="1"></td>
+</tr></tbody></table>
+</div>
+</div>
