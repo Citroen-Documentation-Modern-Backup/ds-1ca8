@@ -1,0 +1,5 @@
+# C3 (1CA8)
+
+Dataset for the Citroën documentation archive: 2759 documents and 4421 images for this vehicle, generated on 2026-09-15.
+
+Browse it at https://citroen-documentation-modern-backup.github.io/#/v/1CA8 — this repository holds data only; the viewer and the build tooling live in the archive's main repository.
